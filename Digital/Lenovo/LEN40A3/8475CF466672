@@ -1,0 +1,56 @@
+
+EDID (hex):
+00ffffffffffff0030aea34000000000
+0c190104951f1178ea8545a45a54a127
+0c505400000001010101010101010101
+010101010101293680a070381f403020
+350035af1000001e0000000000000000
+000000000000000000000000000f00d1
+093bd1093b1e0a0006af3d12000000fe
+004231343048414e30312e33200a0036
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   30 ae a3 40 00 00 00 00 0c 19
+version:         01 04
+basic params:    95 1f 11 78 ea
+chroma info:     85 45 a4 5a 54 a1 27 0c 50 54
+established:     00 00 00
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    29 36 80 a0 70 38 1f 40 30 20 35 00 35 af 10 00 00 1e
+descriptor 2:    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+descriptor 3:    00 00 00 0f 00 d1 09 3b d1 09 3b 1e 0a 00 06 af 3d 12
+descriptor 4:    00 00 00 fe 00 42 31 34 30 48 41 4e 30 31 2e 33 20 0a
+extensions:      00
+checksum:        36
+
+EDID version: 1.4
+Manufacturer: LEN Model 40a3 Serial Number --
+Made in week 12 of 2015
+Digital display
+6 bits per primary color channel
+DisplayPort interface
+Maximum image size: 31 cm x 17 cm
+Gamma: 2.20
+DPMS levels: Standby Suspend Off
+Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+First detailed timing includes the native pixel format and preferred refresh rate
+Display x,y Chromaticity:
+  Red:   0.6425, 0.3515
+  Green: 0.3291, 0.6298
+  Blue:  0.1533, 0.0468
+  White: 0.3134, 0.3291
+Established timings supported:
+Standard timings supported:
+Detailed mode: Clock 138.650 MHz, 309 mm x 175 mm
+               1920 1968 2000 2080 hborder 0
+               1080 1083 1088 1111 vborder 0
+               +hsync +vsync 
+               VertFreq: 59 Hz, HorFreq: 66658 Hz
+Manufacturer-specified data, tag 0
+Manufacturer-specified data, tag 15
+ASCII string: B140HAN01.3 
+Checksum: 0x36 (valid)
+EDID block does NOT conform to EDID 1.4!
+	Missing name descriptor
+	Missing monitor ranges

@@ -1,0 +1,92 @@
+
+EDID (hex):
+00ffffffffffff004c2d4d0c4a545a42
+191d0104b53d23783b5fb1a2574fa228
+0f5054230800810081c08180a9c0b300
+9500010101014dd000a0f0703e803020
+35005f592100001a000000fd00283c87
+873c010a202020202020000000fc0055
+3238453539300a2020202020000000ff
+0048345a4d3630313430320a202001d4
+02030ef041102309070783010000023a
+801871382d40582c45005f592100001e
+565e00a0a0a02950302035005f592100
+001a0000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+000000000000000000000000000000bf
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   4c 2d 4d 0c 4a 54 5a 42 19 1d
+version:         01 04
+basic params:    b5 3d 23 78 3b
+chroma info:     5f b1 a2 57 4f a2 28 0f 50 54
+established:     23 08 00
+standard:        81 00 81 c0 81 80 a9 c0 b3 00 95 00 01 01 01 01
+descriptor 1:    4d d0 00 a0 f0 70 3e 80 30 20 35 00 5f 59 21 00 00 1a
+descriptor 2:    00 00 00 fd 00 28 3c 87 87 3c 01 0a 20 20 20 20 20 20
+descriptor 3:    00 00 00 fc 00 55 32 38 45 35 39 30 0a 20 20 20 20 20
+descriptor 4:    00 00 00 ff 00 48 34 5a 4d 36 30 31 34 30 32 0a 20 20
+extensions:      01
+checksum:        d4
+
+Manufacturer: SAM Model c4d Serial Number --
+Made week 25 of 2019
+EDID version: 1.4
+Digital display
+10 bits per primary color channel
+DisplayPort interface
+Maximum image size: 61 cm x 35 cm
+Gamma: 2.20
+DPMS levels: Off
+Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+First detailed timing is preferred timing
+Supports GTF timings within operating range
+Established timings supported:
+  640x480@60Hz
+  800x600@56Hz
+  800x600@60Hz
+  1024x768@60Hz
+Standard timings supported:
+  1280x800@60Hz
+  1280x720@60Hz
+  1280x1024@60Hz
+  1600x900@60Hz
+  1680x1050@60Hz
+  1440x900@60Hz
+Detailed mode: Clock 533.250 MHz, 607 mm x 345 mm
+               3840 3888 3920 4000 hborder 0
+               2160 2163 2168 2222 vborder 0
+               +hsync -vsync 
+Monitor ranges (bare limits): 40-60Hz V, 135-135kHz H, max dotclock 600MHz
+Monitor name: U28E590
+Serial number: --
+Has 1 extension blocks
+Checksum: 0xd4 (valid)
+
+CEA extension block
+Extension version: 3
+10 bytes of CEA data
+  Video data block
+    VIC 16 1920x1080@60Hz 
+  Audio data block
+    Linear PCM, max channels 1
+    Supported sample rates (kHz): 48 44.1 32
+    Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+Underscans PC formats by default
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+0 native detailed modes
+Detailed mode: Clock 148.500 MHz, 607 mm x 345 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+Detailed mode: Clock 241.500 MHz, 607 mm x 345 mm
+               2560 2608 2640 2720 hborder 0
+               1440 1443 1448 1481 vborder 0
+               +hsync -vsync 
+Checksum: 0xbf (valid)

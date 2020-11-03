@@ -1,0 +1,68 @@
+
+EDID (hex):
+00ffffffffffff005a63193c01010101
+030f010380261e782e6d55a25a4e9b23
+165054bfef808180714f615945593159
+310a01010101302a009851002a403070
+1300782d1100001e000000ff00503154
+3035303331303935390a000000fd0032
+551e520e000a202020202020000000fc
+0056583931300a202020202020200000
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   5a 63 19 3c 01 01 01 01 03 0f
+version:         01 03
+basic params:    80 26 1e 78 2e
+chroma info:     6d 55 a2 5a 4e 9b 23 16 50 54
+established:     bf ef 80
+standard:        81 80 71 4f 61 59 45 59 31 59 31 0a 01 01 01 01
+descriptor 1:    30 2a 00 98 51 00 2a 40 30 70 13 00 78 2d 11 00 00 1e
+descriptor 2:    00 00 00 ff 00 50 31 54 30 35 30 33 31 30 39 35 39 0a
+descriptor 3:    00 00 00 fd 00 32 55 1e 52 0e 00 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 fc 00 56 58 39 31 30 0a 20 20 20 20 20 20 20
+extensions:      00
+checksum:        00
+
+Manufacturer: VSC Model 3c19 Serial Number --
+EDID version: 1.3
+Digital display
+Maximum image size: 38 cm x 30 cm
+Gamma: 2.20
+DPMS levels: Off
+Supported color formats: RGB 4:4:4, YCrCb 4:2:2
+Default (sRGB) color space is primary color space
+First detailed timing is preferred timing
+Established timings supported:
+  720x400@70Hz
+  640x480@60Hz
+  640x480@67Hz
+  640x480@72Hz
+  640x480@75Hz
+  800x600@56Hz
+  800x600@60Hz
+  800x600@72Hz
+  800x600@75Hz
+  832x624@75Hz
+  1024x768@60Hz
+  1024x768@70Hz
+  1024x768@75Hz
+  1280x1024@75Hz
+  1152x870@75Hz
+Standard timings supported:
+  1280x1024@60Hz
+  1152x864@75Hz
+  1024x768@85Hz
+  800x600@85Hz
+  640x480@85Hz
+  640x400@70Hz
+Detailed mode: Clock 108.000 MHz, 376 mm x 301 mm
+               1280 1328 1440 1688 hborder 0
+               1024 1025 1028 1066 vborder 0
+               +hsync +vsync 
+Serial number: --
+Monitor ranges (GTF): 50-85Hz V, 30-82kHz H, max dotclock 140MHz
+Monitor name: VX910
+Checksum: 0x0 (valid)
+EDID block does not conform at all!
+	Bad year of manufacture

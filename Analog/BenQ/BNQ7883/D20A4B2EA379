@@ -1,0 +1,59 @@
+
+EDID (hex):
+00ffffffffffff0009d1837845540000
+031501030e2917782e2305a258539c26
+115054a56a00710081c0010101010101
+010101010101662156aa51001e30468f
+33009ae61000001e000000ff00523142
+3031313930534c300a20000000fd0032
+4c1e5315000a202020202020000000fc
+0042656e5120474c3934300a20200074
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   09 d1 83 78 45 54 00 00 03 15
+version:         01 03
+basic params:    0e 29 17 78 2e
+chroma info:     23 05 a2 58 53 9c 26 11 50 54
+established:     a5 6a 00
+standard:        71 00 81 c0 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    66 21 56 aa 51 00 1e 30 46 8f 33 00 9a e6 10 00 00 1e
+descriptor 2:    00 00 00 ff 00 52 31 42 30 31 31 39 30 53 4c 30 0a 20
+descriptor 3:    00 00 00 fd 00 32 4c 1e 53 15 00 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 fc 00 42 65 6e 51 20 47 4c 39 34 30 0a 20 20
+extensions:      00
+checksum:        74
+
+Manufacturer: BNQ Model 7883 Serial Number --
+Made week 3 of 2011
+EDID version: 1.3
+Analog display, Input voltage level: 0.7/0.3 V
+Sync: Separate Composite SyncOnGreen 
+Maximum image size: 41 cm x 23 cm
+Gamma: 2.20
+DPMS levels: Off
+RGB color display
+Default (sRGB) color space is primary color space
+First detailed timing is preferred timing
+Established timings supported:
+  720x400@70Hz
+  640x480@60Hz
+  640x480@75Hz
+  800x600@60Hz
+  800x600@75Hz
+  832x624@75Hz
+  1024x768@60Hz
+  1024x768@75Hz
+Standard timings supported:
+  1152x720@60Hz
+  1280x720@60Hz
+Detailed mode: Clock 85.500 MHz, 410 mm x 230 mm
+               1366 1436 1579 1792 hborder 0
+                768  771  774  798 vborder 0
+               +hsync +vsync 
+Serial number: --
+Monitor ranges (GTF): 50-76Hz V, 30-83kHz H, max dotclock 210MHz
+Monitor name: BenQ
+Checksum: 0x74 (valid)
+EDID block does NOT conform to EDID 1.3!
+	Detailed block string not properly terminated

@@ -1,0 +1,123 @@
+
+EDID (hex):
+00ffffffffffff003cad003700000000
+0a120103801009780a6837a454489a25
+0f4a4c3fef8001010101010101010101
+010101010101011d8018711c1620582c
+250010090000009e011d007251d01e20
+6e28550010090000001e000000fc0033
+32575f4c43445f54560a2020000000fd
+00313d0f2e08000a2020202020200108
+02032471500102048506111314150307
+12161f2010230907018301000066030c
+001000808c0ad08a20e02d10103e9600
+0403000000188c0aa01451f01600267c
+4300040300000099011d80d0721c1620
+102c258010090000009f011d00bc52d0
+1e20b828554010090000001e00000000
+000000000000000000000000000000f2
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   3c ad 00 37 00 00 00 00 0a 12
+version:         01 03
+basic params:    80 10 09 78 0a
+chroma info:     68 37 a4 54 48 9a 25 0f 4a 4c
+established:     3f ef 80
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    01 1d 80 18 71 1c 16 20 58 2c 25 00 10 09 00 00 00 9e
+descriptor 2:    01 1d 00 72 51 d0 1e 20 6e 28 55 00 10 09 00 00 00 1e
+descriptor 3:    00 00 00 fc 00 33 32 57 5f 4c 43 44 5f 54 56 0a 20 20
+descriptor 4:    00 00 00 fd 00 31 3d 0f 2e 08 00 0a 20 20 20 20 20 20
+extensions:      01
+checksum:        08
+
+Manufacturer: OEM Model 3700 Serial Number --
+Made week 10 of 2008
+EDID version: 1.3
+Digital display
+Maximum image size: 16 cm x 9 cm
+Gamma: 2.20
+Supported color formats: RGB 4:4:4, YCrCb 4:2:2
+First detailed timing is preferred timing
+Established timings supported:
+  640x480@60Hz
+  640x480@67Hz
+  640x480@72Hz
+  640x480@75Hz
+  800x600@56Hz
+  800x600@60Hz
+  800x600@72Hz
+  800x600@75Hz
+  832x624@75Hz
+  1024x768@60Hz
+  1024x768@70Hz
+  1024x768@75Hz
+  1280x1024@75Hz
+  1152x870@75Hz
+Standard timings supported:
+Detailed mode: Clock 74.250 MHz, 16 mm x 9 mm
+               1920 2008 2052 2200 hborder 0
+                540  542  547  562 vborder 0
+               +hsync +vsync interlaced 
+Detailed mode: Clock 74.250 MHz, 16 mm x 9 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+Monitor name: 32W
+Monitor ranges (GTF): 49-61Hz V, 15-46kHz H, max dotclock 80MHz
+Has 1 extension blocks
+Checksum: 0x8 (valid)
+
+CEA extension block
+Extension version: 3
+32 bytes of CEA data
+  Video data block
+    VIC 01 640x480@60Hz 
+    VIC 02 720x480@60Hz 
+    VIC 04 1280x720@60Hz 
+    VIC 05 1920x1080i@60Hz (native)
+    VIC 06 1440x480i@60Hz 
+    VIC 17 720x576@50Hz 
+    VIC 19 1280x720@50Hz 
+    VIC 20 1920x1080i@50Hz 
+    VIC 21 1440x576i@50Hz 
+    VIC 03 720x480@60Hz 
+    VIC 07 1440x480i@60Hz 
+    VIC 18 720x576@50Hz 
+    VIC 22 1440x576i@50Hz 
+    VIC 31 1920x1080@50Hz 
+    VIC 32 1920x1080@24Hz 
+    VIC 16 1920x1080@60Hz 
+  Audio data block
+    Linear PCM, max channels 1
+    Supported sample rates (kHz): 48 44.1 32
+    Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+  Vendor-specific data block, OUI 000c03 (HDMI)
+    Source physical address 1.0.0.0
+    Supports_AI
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+1 native detailed modes
+Detailed mode: Clock 27.000 MHz, 4 mm x 3 mm
+                720  736  798  858 hborder 0
+                480  489  495  525 vborder 0
+               -hsync -vsync 
+Detailed mode: Clock 27.000 MHz, 4 mm x 3 mm
+               1440 1478 1602 1716 hborder 0
+                240  244  247  262 vborder 0
+               -hsync -vsync interlaced 
+Detailed mode: Clock 74.250 MHz, 16 mm x 9 mm
+               1920 2448 2492 2640 hborder 0
+                540  542  547  562 vborder 0
+               +hsync +vsync interlaced 
+Detailed mode: Clock 74.250 MHz, 16 mm x 9 mm
+               1280 1720 1760 1980 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+Checksum: 0xf2 (valid)
+
+EDID block does NOT conform to EDID 1.3!
+	Detailed block string not properly terminated

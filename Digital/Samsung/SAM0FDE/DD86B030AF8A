@@ -1,0 +1,117 @@
+
+EDID (hex):
+00ffffffffffff004c2dde0f35305630
+271d0104a54627783b4935ad5146a927
+0f5054bfef80714f810081c081809500
+a9c0b300010122e50050a0a067500820
+f80cb9882100001a000000fd003090e1
+e13b010a202020202020000000fc0043
+33324a4735780a2020202020000000ff
+0048544f4d3930303530360a20200141
+020313f146901f041303122309070783
+010000565e00a0a0a0295030203500b9
+882100001a023a801871382d40582c45
+00b9882100001e5aa000a0a0a0465030
+203500b9882100001a6fc200a0a0a055
+5030203500b9882100001a0000000000
+00000000000000000000000000000000
+000000000000000000000000000000af
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   4c 2d de 0f 35 30 56 30 27 1d
+version:         01 04
+basic params:    a5 46 27 78 3b
+chroma info:     49 35 ad 51 46 a9 27 0f 50 54
+established:     bf ef 80
+standard:        71 4f 81 00 81 c0 81 80 95 00 a9 c0 b3 00 01 01
+descriptor 1:    22 e5 00 50 a0 a0 67 50 08 20 f8 0c b9 88 21 00 00 1a
+descriptor 2:    00 00 00 fd 00 30 90 e1 e1 3b 01 0a 20 20 20 20 20 20
+descriptor 3:    00 00 00 fc 00 43 33 32 4a 47 35 78 0a 20 20 20 20 20
+descriptor 4:    00 00 00 ff 00 48 54 4f 4d 39 30 30 35 30 36 0a 20 20
+extensions:      01
+checksum:        41
+
+Manufacturer: SAM Model fde Serial Number --
+Made week 39 of 2019
+EDID version: 1.4
+Digital display
+8 bits per primary color channel
+DisplayPort interface
+Maximum image size: 70 cm x 39 cm
+Gamma: 2.20
+DPMS levels: Off
+Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
+First detailed timing is preferred timing
+Supports GTF timings within operating range
+Established timings supported:
+  720x400@70Hz
+  640x480@60Hz
+  640x480@67Hz
+  640x480@72Hz
+  640x480@75Hz
+  800x600@56Hz
+  800x600@60Hz
+  800x600@72Hz
+  800x600@75Hz
+  832x624@75Hz
+  1024x768@60Hz
+  1024x768@70Hz
+  1024x768@75Hz
+  1280x1024@75Hz
+  1152x870@75Hz
+Standard timings supported:
+  1152x864@75Hz
+  1280x800@60Hz
+  1280x720@60Hz
+  1280x1024@60Hz
+  1440x900@60Hz
+  1600x900@60Hz
+  1680x1050@60Hz
+Detailed mode: Clock 586.580 MHz, 697 mm x 392 mm
+               2560 2568 2600 2640 hborder 0
+               1440 1503 1511 1543 vborder 0
+               +hsync -vsync 
+Monitor ranges (bare limits): 48-144Hz V, 225-225kHz H, max dotclock 590MHz
+Monitor name: C32JG5x
+Serial number: --
+Has 1 extension blocks
+Checksum: 0x41 (valid)
+
+CEA extension block
+Extension version: 3
+15 bytes of CEA data
+  Video data block
+    VIC 16 1920x1080@60Hz (native)
+    VIC 31 1920x1080@50Hz 
+    VIC 04 1280x720@60Hz 
+    VIC 19 1280x720@50Hz 
+    VIC 03 720x480@60Hz 
+    VIC 18 720x576@50Hz 
+  Audio data block
+    Linear PCM, max channels 1
+    Supported sample rates (kHz): 48 44.1 32
+    Supported sample sizes (bits): 24 20 16
+  Speaker allocation data block
+Underscans PC formats by default
+Basic audio support
+Supports YCbCr 4:4:4
+Supports YCbCr 4:2:2
+1 native detailed modes
+Detailed mode: Clock 241.500 MHz, 697 mm x 392 mm
+               2560 2608 2640 2720 hborder 0
+               1440 1443 1448 1481 vborder 0
+               +hsync -vsync 
+Detailed mode: Clock 148.500 MHz, 697 mm x 392 mm
+               1920 2008 2052 2200 hborder 0
+               1080 1084 1089 1125 vborder 0
+               +hsync +vsync 
+Detailed mode: Clock 410.500 MHz, 697 mm x 392 mm
+               2560 2608 2640 2720 hborder 0
+               1440 1443 1448 1510 vborder 0
+               +hsync -vsync 
+Detailed mode: Clock 497.750 MHz, 697 mm x 392 mm
+               2560 2608 2640 2720 hborder 0
+               1440 1443 1448 1525 vborder 0
+               +hsync -vsync 
+Checksum: 0xaf (valid)

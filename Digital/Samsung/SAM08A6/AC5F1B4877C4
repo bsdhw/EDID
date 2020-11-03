@@ -1,0 +1,89 @@
+
+EDID (hex):
+00ffffffffffff004c2da6084e363459
+1d160103802917782a7841a259559b25
+0f5054bfee0081c00101010101010101
+010101010101662156aa51001e30468f
+33009ae61000001e000000fd00384b1e
+5109000a202020202020000000fc0053
+3139423330300a2020202020000000ff
+0048584b433730343938360a2020012d
+02010400011d007251d01e206e285500
+9ae61000001e011d00bc52d01e20b828
+55409ae61000001e8c0ad09020403120
+0c4055009ae6100000188c0ad08a20e0
+2d10103e96009ae61000001800000000
+00000000000000000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000006b
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   4c 2d a6 08 4e 36 34 59 1d 16
+version:         01 03
+basic params:    80 29 17 78 2a
+chroma info:     78 41 a2 59 55 9b 25 0f 50 54
+established:     bf ee 00
+standard:        81 c0 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    66 21 56 aa 51 00 1e 30 46 8f 33 00 9a e6 10 00 00 1e
+descriptor 2:    00 00 00 fd 00 38 4b 1e 51 09 00 0a 20 20 20 20 20 20
+descriptor 3:    00 00 00 fc 00 53 31 39 42 33 30 30 0a 20 20 20 20 20
+descriptor 4:    00 00 00 ff 00 48 58 4b 43 37 30 34 39 38 36 0a 20 20
+extensions:      01
+checksum:        2d
+
+Manufacturer: SAM Model 8a6 Serial Number --
+Made week 29 of 2012
+EDID version: 1.3
+Digital display
+Maximum image size: 41 cm x 23 cm
+Gamma: 2.20
+DPMS levels: Off
+Supported color formats: RGB 4:4:4, YCrCb 4:2:2
+First detailed timing is preferred timing
+Established timings supported:
+  720x400@70Hz
+  640x480@60Hz
+  640x480@67Hz
+  640x480@72Hz
+  640x480@75Hz
+  800x600@56Hz
+  800x600@60Hz
+  800x600@72Hz
+  800x600@75Hz
+  832x624@75Hz
+  1024x768@60Hz
+  1024x768@70Hz
+  1024x768@75Hz
+Standard timings supported:
+  1280x720@60Hz
+Detailed mode: Clock 85.500 MHz, 410 mm x 230 mm
+               1366 1436 1579 1792 hborder 0
+                768  771  774  798 vborder 0
+               +hsync +vsync 
+Monitor ranges (GTF): 56-75Hz V, 30-81kHz H, max dotclock 90MHz
+Monitor name: S19B300
+Serial number: --
+Has 1 extension blocks
+Checksum: 0x2d (valid)
+
+CEA extension block
+Extension version: 1
+0 8-byte timing descriptors
+Detailed mode: Clock 74.250 MHz, 410 mm x 230 mm
+               1280 1390 1430 1650 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+Detailed mode: Clock 74.250 MHz, 410 mm x 230 mm
+               1280 1720 1760 1980 hborder 0
+                720  725  730  750 vborder 0
+               +hsync +vsync 
+Detailed mode: Clock 27.000 MHz, 410 mm x 230 mm
+                720  732  796  864 hborder 0
+                576  581  586  625 vborder 0
+               -hsync -vsync 
+Detailed mode: Clock 27.000 MHz, 410 mm x 230 mm
+                720  736  798  858 hborder 0
+                480  489  495  525 vborder 0
+               -hsync -vsync 
+Checksum: 0x6b (valid)
