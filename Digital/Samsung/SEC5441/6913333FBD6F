@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 41 54 00 00 00 00
+00 12 01 03 90 21 15 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 8f 1b 00 82 50 20 22 30 10 30
+13 00 4b cf 10 00 00 1a 8f 1b 00 82 50 20 22 30
+10 30 13 00 4b cf 10 00 00 1a 00 00 00 fe 00 4a
+37 39 34 43 80 31 35 34 41 54 0a 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 82
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21569
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.995 Hz   8:5    50.035 kHz  70.550 MHz (331 mm x 207 mm)
+                 Hfront   16 Hsync  48 Hback  66 Hpol P
+                 Vfront    1 Vsync   3 Vback  30 Vpol N
+    DTD 2:  1280x800    59.995 Hz   8:5    50.035 kHz  70.550 MHz (331 mm x 207 mm)
+                 Hfront   16 Hsync  48 Hback  66 Hpol P
+                 Vfront    1 Vsync   3 Vback  30 Vpol N
+    Alphanumeric Data String: 'J794C'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0x82
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

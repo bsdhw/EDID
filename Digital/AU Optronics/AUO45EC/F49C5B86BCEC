@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ec 45 00 00 00 00
+0f 15 01 04 90 22 13 78 02 0b b5 97 57 54 8c 26
+23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 60 50 00 16 30 08 0a
+31 00 58 c1 10 00 00 1a 12 1b 56 a4 51 00 c8 30
+08 0a 31 00 58 c1 10 00 00 1a 00 00 00 fe 00 4d
+34 54 4b 33 80 42 31 35 36 58 57 34 00 00 00 00
+00 00 41 21 94 01 11 00 00 01 01 0a 20 20 00 52
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 17900
+    Made in: week 15 of 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5898, 0.3398
+    Green: 0.3300, 0.5498
+    Blue : 0.1503, 0.1396
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.001 Hz 683:384  47.401 kHz  69.300 MHz (344 mm x 193 mm)
+                 Hfront    8 Hsync  10 Hback  78 Hpol P
+                 Vfront    3 Vsync   1 Vback  18 Vpol N
+    DTD 2:  1366x768    40.084 Hz 683:384  38.802 kHz  69.300 MHz (344 mm x 193 mm)
+                 Hfront    8 Hsync  10 Hback 402 Hpol P
+                 Vfront    3 Vsync   1 Vback 196 Vpol N
+    Alphanumeric Data String: 'M4TK3'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 94 01 11 00 00 01 01 0a 20 20 '....A!........  '
+Checksum: 0x52
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

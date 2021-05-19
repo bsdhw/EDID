@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 dc 03 00 00 00 00
+00 17 01 04 95 1c 10 78 0a 10 a5 96 58 57 8f 28
+20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 52 1c 56 a0 50 00 18 30 20 20
+24 00 15 9c 10 00 00 1a 52 1c 56 a0 50 00 a4 31
+20 20 24 00 15 9c 10 00 00 1a 00 00 00 fe 00 46
+4d 39 46 46 80 31 32 35 57 48 32 0a 00 00 00 00
+00 00 41 31 94 00 00 00 00 01 01 0a 20 20 00 91
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 988
+    Made in: 2013
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 28 cm x 16 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5859, 0.3447
+    Green: 0.3398, 0.5585
+    Blue : 0.1582, 0.1269
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.987 Hz 683:384  47.510 kHz  72.500 MHz (277 mm x 156 mm)
+                 Hfront   32 Hsync  32 Hback  96 Hpol P
+                 Vfront    2 Vsync   4 Vback  18 Vpol N
+    DTD 2:  1366x768    39.991 Hz 683:384  47.510 kHz  72.500 MHz (277 mm x 156 mm)
+                 Hfront   32 Hsync  32 Hback  96 Hpol P
+                 Vfront    2 Vsync   4 Vback 414 Vpol N
+    Alphanumeric Data String: 'FM9FF'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 94 00 00 00 00 01 01 0a 20 20 '....A1........  '
+Checksum: 0x91
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

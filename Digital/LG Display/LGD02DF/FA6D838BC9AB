@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 df 02 00 00 00 00
+00 14 01 04 90 1f 11 78 02 43 45 97 59 57 8e 28
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 be 25 40 a4 60 84 0c 30 30 30
+34 00 36 ae 10 00 00 1a be 25 40 e4 62 84 7c 30
+30 30 34 00 36 ae 10 00 00 1a 00 00 00 fe 00 47
+4a 34 39 34 80 31 34 30 57 44 31 0a 00 00 00 00
+00 00 41 31 9e 00 00 00 00 02 01 0a 20 20 00 28
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 735
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5908, 0.3476
+    Green: 0.3398, 0.5576
+    Blue : 0.1572, 0.1289
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.058 Hz  16:9    54.773 kHz  96.620 MHz (310 mm x 174 mm)
+                 Hfront   48 Hsync  48 Hback  68 Hpol P
+                 Vfront    3 Vsync   4 Vback   5 Vpol N
+    DTD 2:  1600x900    40.323 Hz  16:9    41.291 kHz  96.620 MHz (310 mm x 174 mm)
+                 Hfront   48 Hsync  48 Hback 644 Hpol P
+                 Vfront    3 Vsync   4 Vback 117 Vpol N
+    Alphanumeric Data String: 'GJ494'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 9e 00 00 00 00 02 01 0a 20 20 '....A1........  '
+Checksum: 0x28
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL
