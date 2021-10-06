@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 09 e5 10 08 00 00 00 00
+01 1c 01 04 95 1f 11 78 02 e7 b0 95 5c 59 94 29
+22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 39 37 80 de 70 38 14 40 30 20
+36 00 35 ad 10 00 00 1a 2d 2c 80 de 70 38 14 40
+30 20 36 00 35 ad 10 00 00 1a 00 00 00 fe 00 31
+52 4e 32 39 80 4e 56 31 34 4e 34 41 00 00 00 00
+00 00 41 21 96 00 10 00 00 0a 01 0a 20 20 00 a7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: BOE
+    Model: 2064
+    Made in: week 1 of 2018
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3613
+    Green: 0.3486, 0.5810
+    Blue : 0.1621, 0.1357
+    White: 0.3125, 0.3281
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.999151 Hz  16:9     65.999 kHz    141.370000 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  142 Hpol P
+                 Vfront    3 Vsync   6 Vback   11 Vpol N
+    DTD 2:  1920x1080   47.996774 Hz  16:9     52.796 kHz    113.090000 MHz (309 mm x 173 mm)
+                 Hfront   48 Hsync  32 Hback  142 Hpol P
+                 Vfront    3 Vsync   6 Vback   11 Vpol N
+    Alphanumeric Data String: '1RN29'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 96 00 10 00 00 0a 01 0a 20 20 '....A!........  '
+Checksum: 0xa7
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

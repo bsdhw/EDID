@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 72 03 00 00 00 00
+00 16 01 04 90 26 15 78 02 57 25 9a 5b 58 9c 27
+1a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 26 2a 40 40 61 84 24 30 30 20
+35 00 7e d7 10 00 00 19 13 1c 40 40 61 84 24 30
+30 20 35 00 7e d7 10 00 00 19 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+00 0c 47 ff 0a 3c 64 21 26 3b 64 00 00 00 00 e8
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 882
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 38 cm x 21 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6025, 0.3564
+    Green: 0.3447, 0.6123
+    Blue : 0.1523, 0.1035
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.040509 Hz  16:9     56.198 kHz    107.900000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  240 Hpol N
+                 Vfront    3 Vsync   5 Vback   28 Vpol N
+    DTD 2:  1600x900    39.991765 Hz  16:9     37.432 kHz     71.870000 MHz (382 mm x 215 mm)
+                 Hfront   48 Hsync  32 Hback  240 Hpol N
+                 Vfront    3 Vsync   5 Vback   28 Vpol N
+    Empty Descriptor
+    Manufacturer-Specified Display Descriptor (0x02): 00 02 00 0c 47 ff 0a 3c 64 21 26 3b 64 00 00 00 '....G..<d!&;d...'
+Checksum: 0xe8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

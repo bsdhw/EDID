@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 0d ae b1 15 00 00 00 00
+01 16 01 04 90 22 13 78 02 31 d5 9f 56 58 95 27
+15 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 96 3b 80 32 71 38 3e 40 5a 3c
+69 00 58 c2 10 00 00 1a 9b 25 80 ee 70 38 23 40
+35 23 35 00 58 c2 10 00 00 1a 00 00 00 fe 00 56
+43 4d 38 58 02 4e 31 35 36 48 47 0a 00 00 00 00
+00 00 41 31 9e 00 00 00 00 02 01 0a 20 20 00 05
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: CMN
+    Model: 5553
+    Made in: week 1 of 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6210, 0.3388
+    Green: 0.3437, 0.5830
+    Blue : 0.1552, 0.0830
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.005696 Hz  16:9     68.527 kHz    152.540000 MHz (344 mm x 194 mm)
+                 Hfront   90 Hsync  60 Hback  156 Hpol P
+                 Vfront    6 Vsync   9 Vback   47 Vpol N
+    DTD 2:  1920x1080   40.009642 Hz  16:9     44.611 kHz     96.270000 MHz (344 mm x 194 mm)
+                 Hfront   53 Hsync  35 Hback  150 Hpol P
+                 Vfront    3 Vsync   5 Vback   27 Vpol N
+    Alphanumeric Data String: 'VCM8X'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 9e 00 00 00 00 02 01 0a 20 20 '....A1........  '
+Checksum: 0x05
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

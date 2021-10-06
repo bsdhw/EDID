@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 4c 31 00 00 00 00
+00 15 01 03 80 22 13 78 ea 2d e5 9d 5c 4e 9a 27
+1a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 29 36 80 a0 70 38 1f 40 18 10
+25 00 58 c2 10 00 00 19 00 00 00 0f 00 00 00 00
+00 00 00 00 00 28 5a 0a 3c 00 00 00 00 fe 00 53
+41 4d 53 55 4e 47 0a 20 20 20 20 20 00 00 00 fe
+00 31 35 36 48 54 30 31 2d 32 30 31 0a 20 00 4e
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 12620
+    Made in: 2011
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6132, 0.3613
+    Green: 0.3076, 0.6025
+    Blue : 0.1552, 0.1035
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.998788 Hz  16:9     66.659 kHz    138.650000 MHz (344 mm x 194 mm)
+                 Hfront   24 Hsync  16 Hback  120 Hpol N
+                 Vfront    2 Vsync   5 Vback   24 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 28 5a 0a 3c 00 '...........(Z.<.'
+    Alphanumeric Data String: 'SAMSUNG'
+    Alphanumeric Data String: '156HT01-201'
+Checksum: 0x4e
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL

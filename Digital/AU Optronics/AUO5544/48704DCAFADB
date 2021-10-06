@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 44 55 00 00 00 00
+01 14 01 04 95 1e 13 78 02 c9 31 9b 59 52 8f 26
+23 4e 55 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 f4 1a 00 72 50 20 17 30 30 20
+36 00 2f bd 10 00 00 1a ed 11 00 72 50 20 17 30
+30 20 36 00 2f bd 10 00 00 1a 00 00 00 fe 00 34
+34 50 36 34 80 42 31 34 31 45 57 35 00 00 00 00
+00 00 41 21 16 00 00 00 00 09 01 0a 20 20 00 e8
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 21828
+    Made in: week 1 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 30 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6083, 0.3476
+    Green: 0.3222, 0.5595
+    Blue : 0.1484, 0.1396
+    White: 0.3046, 0.3330
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    60.143193 Hz   8:5     49.498 kHz     69.000000 MHz (303 mm x 189 mm)
+                 Hfront   48 Hsync  32 Hback   34 Hpol P
+                 Vfront    3 Vsync   6 Vback   14 Vpol N
+    DTD 2:  1280x800    39.999582 Hz   8:5     32.920 kHz     45.890000 MHz (303 mm x 189 mm)
+                 Hfront   48 Hsync  32 Hback   34 Hpol P
+                 Vfront    3 Vsync   6 Vback   14 Vpol N
+    Alphanumeric Data String: '44P64'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 16 00 00 00 00 09 01 0a 20 20 '....A!........  '
+Checksum: 0xe8
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

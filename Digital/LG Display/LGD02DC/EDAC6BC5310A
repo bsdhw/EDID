@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 dc 02 00 00 00 00
+00 14 01 04 90 22 13 78 0a 09 15 9d 5f 59 9b 27
+19 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 1d 56 c6 50 00 2a 30 24 30
+35 00 58 c2 10 00 00 19 ec 13 56 c6 50 00 2e 30
+24 30 35 00 58 c2 10 00 00 19 00 00 00 fe 00 39
+48 58 58 4a 80 31 35 36 57 48 34 0a 00 00 00 00
+00 00 41 31 96 01 00 00 00 01 01 0a 20 20 00 f7
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 732
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6132, 0.3710
+    Green: 0.3496, 0.6064
+    Blue : 0.1523, 0.0986
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    59.991791 Hz 683:384   48.593 kHz     76.000000 MHz (344 mm x 194 mm)
+                 Hfront   36 Hsync  48 Hback  114 Hpol N
+                 Vfront    3 Vsync   5 Vback   34 Vpol N
+    DTD 2:  1366x768    40.059823 Hz 683:384   32.609 kHz     51.000000 MHz (344 mm x 194 mm)
+                 Hfront   36 Hsync  48 Hback  114 Hpol N
+                 Vfront    3 Vsync   5 Vback   38 Vpol N
+    Alphanumeric Data String: '9HXXJ'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 96 01 00 00 00 01 01 0a 20 20 '....A1........  '
+Checksum: 0xf7
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL
