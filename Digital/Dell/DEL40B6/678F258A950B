@@ -44,13 +44,13 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:   848x480    59.745 Hz  53:30   29.514 kHz  29.750 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback  80 Hpol P
-                 Vfront    3 Vsync   5 Vback   6 Vpol N
+    DTD 1:   848x480    59.744714 Hz  53:30    29.514 kHz     29.750000 MHz (597 mm x 336 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   5 Vback    6 Vpol N
     Display Product Serial Number: ...
     Display Product Name: 'DELL UP2715K'
-  Display Range Limits:
-    Monitor ranges (Bare Limits): 29-75 Hz V, 31-180 kHz H, max dotclock 540 MHz
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 29-75 Hz V, 31-180 kHz H, max dotclock 540 MHz
   Extension blocks: 1
 Checksum: 0x80
 
@@ -70,14 +70,14 @@ Block 1, DisplayID Extension Block:
     Tile resolution: 2560x2880
     Tiled Display Manufacturer/Vendor ID: DEL
     Tiled Display Product ID Code: 16566
-    Tiled Display Serial Number: 942815059
+    Tiled Display Serial Number: ...
   Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  2560x2880   29.987 Hz  16:9    87.592 kHz 238.250 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync  10 Vback  28 Vpol N
-    DTD:  2560x2880   59.982 Hz  16:9   177.665 kHz 483.250 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback  80 Hpol P
-               Vfront    3 Vsync  10 Vback  69 Vpol N
+    DTD:  2560x2880   29.986961 Hz  16:9     87.592 kHz    238.250000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   28 Vpol N
+    DTD:  2560x2880   59.981580 Hz  16:9    177.665 kHz    483.250000 MHz (aspect 16:9, no 3D stereo)
+               Hfront   48 Hsync  32 Hback   80 Hpol P
+               Vfront    3 Vsync  10 Vback   69 Vpol N
   Checksum: 0x7f
 Checksum: 0x90
 

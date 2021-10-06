@@ -32,12 +32,12 @@ Block 0, Base EDID:
   Established Timings I & II: none
   Standard Timings: none
   Detailed Timing Descriptors:
-    DTD 1:  1366x768    60.033 Hz 683:384  47.787 kHz  72.110 MHz (309 mm x 174 mm)
-                 Hfront   23 Hsync  48 Hback  72 Hpol N
-                 Vfront    3 Vsync   9 Vback  16 Vpol N
-    DTD 2:  1366x768    49.811 Hz 683:384  40.147 kHz  62.630 MHz (309 mm x 174 mm)
-                 Hfront   31 Hsync  65 Hback  98 Hpol N
-                 Vfront    4 Vsync  12 Vback  22 Vpol N
+    DTD 1:  1366x768    60.033434 Hz 683:384   47.787 kHz     72.110000 MHz (309 mm x 174 mm)
+                 Hfront   23 Hsync  48 Hback   72 Hpol N
+                 Vfront    3 Vsync   9 Vback   16 Vpol N
+    DTD 2:  1366x768    49.810715 Hz 683:384   40.147 kHz     62.630000 MHz (309 mm x 174 mm)
+                 Hfront   31 Hsync  65 Hback   98 Hpol N
+                 Vfront    4 Vsync  12 Vback   22 Vpol N
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 8c 09 32 8c 09 28 16 09 00 0d af 50 14 '.....2..(.....P.'
     Alphanumeric Data String: 'N140B6-L02'
 Checksum: 0x3d
