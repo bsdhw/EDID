@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 3e 31 00 00 00 00
+21 14 01 04 90 1f 11 78 02 cc ce 99 58 50 8e 26
+24 4b 53 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 b0 2c 40 ce 61 84 18 30 40 2a
+33 00 35 ae 10 00 00 1a b0 2c 40 84 63 84 f4 30
+40 2a 33 00 35 ae 10 00 00 1a 00 00 00 fe 00 54
+36 4e 33 4e 80 42 31 34 30 52 57 33 00 00 00 00
+00 00 41 21 9e 00 11 00 00 02 01 0a 20 20 00 0f
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 12606
+    Made in: week 33 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    Digital interface is not defined
+    Maximum image size: 31 cm x 17 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6005, 0.3437
+    Green: 0.3154, 0.5546
+    Blue : 0.1513, 0.1406
+    White: 0.2958, 0.3261
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1600x900    60.043416 Hz  16:9     55.480 kHz    114.400000 MHz (309 mm x 174 mm)
+                 Hfront   64 Hsync  42 Hback  356 Hpol P
+                 Vfront    3 Vsync   3 Vback   18 Vpol N
+    DTD 2:  1600x900    40.000000 Hz  16:9     45.760 kHz    114.400000 MHz (309 mm x 174 mm)
+                 Hfront   64 Hsync  42 Hback  794 Hpol P
+                 Vfront    3 Vsync   3 Vback  238 Vpol N
+    Alphanumeric Data String: 'T6N3N'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 9e 00 11 00 00 02 01 0a 20 20 '....A!........  '
+Checksum: 0x0f
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-printable character.
+  Missing Display Product Name.
+
+EDID conformity: FAIL

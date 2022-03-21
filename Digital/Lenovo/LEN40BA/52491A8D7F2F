@@ -1,0 +1,54 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 ae ba 40 00 00 00 00
+00 1b 01 04 a5 22 13 78 ea cd e5 95 5b 55 8f 27
+1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 24 36 80 a0 70 38 1f 40 30 20
+35 00 58 c2 10 00 00 19 50 2b 80 a0 70 38 1f 40
+30 20 35 00 58 c2 10 00 00 19 00 00 00 0f 00 d1
+09 32 d1 09 30 19 0a 00 30 e4 ba 05 00 00 00 fe
+00 4c 50 31 35 36 57 46 39 2d 53 50 4b 33 00 2c
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: LEN
+    Model: 16570
+    Made in: 2017
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    DPMS levels: Standby Suspend Off
+    Supported color formats: RGB 4:4:4, YCrCb 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.5849, 0.3554
+    Green: 0.3349, 0.5595
+    Blue : 0.1552, 0.1152
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   59.977152 Hz  16:9     66.635 kHz    138.600000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    DTD 2:  1920x1080   47.981721 Hz  16:9     53.308 kHz    110.880000 MHz (344 mm x 194 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol N
+                 Vfront    3 Vsync   5 Vback   23 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 09 32 d1 09 30 19 0a 00 30 e4 ba 05 '.....2..0...0...'
+    Alphanumeric Data String: 'LP156WF9-SPK3'
+Checksum: 0x2c
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Missing Display Product Name.
+
+EDID conformity: FAIL
