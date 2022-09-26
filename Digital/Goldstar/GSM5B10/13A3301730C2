@@ -1,0 +1,130 @@
+
+EDID (hex):
+00ffffffffffff001e6d105b85870700
+051b0104a5301b78800f91ae5243b026
+0f505420000001010101010101010101
+01010101010125cc0050f0703e800820
+1800db0b1100001a000000ff00373035
+4e54424b45483434350a000000fd0030
+3c588f3c010a202020202020000000fc
+004c4720556c74726146696e650a020a
+701279000001000c8e126e0a00100009
+50784e772900101ebfa1bf919f410b9e
+0281eaaa461157030050a5640084ff0e
+4f0007801f006f081e0000000700bb9c
+00041f0d4f0007801f00610735000000
+0700a25b0004ff094f0007801f009f05
+280000000700133400047f074f000780
+1f0037041e000000070000000000c090
+7012790000030050f5e70084ff0f4f00
+07801f00ff084100000007008cb80084
+ff0f4f0007801f00ff08340000000700
+5c720084ff0f4f0007801f00ff082000
+0000070024cc0084ff0e4f0007801f00
+6f083d00000007000000000000000000
+00000000000000000000000000000000
+0000000000000000000000000000af90
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   1e 6d 10 5b 85 87 07 00 05 1b
+version:         01 04
+basic params:    a5 30 1b 78 80
+chroma info:     0f 91 ae 52 43 b0 26 0f 50 54
+established:     20 00 00
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    25 cc 00 50 f0 70 3e 80 08 20 18 00 db 0b 11 00 00 1a
+descriptor 2:    00 00 00 ff 00 37 30 35 4e 54 42 4b 45 48 34 34 35 0a
+descriptor 3:    00 00 00 fd 00 30 3c 58 8f 3c 01 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 fc 00 4c 47 20 55 6c 74 72 61 46 69 6e 65 0a
+extensions:      02
+checksum:        0a
+
+EDID version: 1.4
+Manufacturer: GSM Model 5b10 Serial Number --
+Made in week 5 of 2017
+Digital display
+8 bits per primary color channel
+DisplayPort interface
+Maximum image size: 48 cm x 27 cm
+Gamma: 2.20
+DPMS levels: Standby
+Supported color formats: RGB 4:4:4
+Display x,y Chromaticity:
+  Red:   0.6796, 0.3203
+  Green: 0.2646, 0.6904
+  Blue:  0.1503, 0.0595
+  White: 0.3125, 0.3291
+Established timings supported:
+  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
+Standard timings supported:
+Detailed mode: Clock 522.610 MHz, 475 mm x 267 mm
+               3840 3848 3880 3920 hborder 0
+               2160 2161 2169 2222 vborder 0
+               +hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 133318 Hz
+Serial number: --
+Monitor ranges (bare limits): 48-60Hz V, 88-143kHz H, max dotclock 600MHz
+Monitor name: LG UltraFine
+Has 2 extension blocks
+Checksum: 0xa (valid)
+
+DisplayID extension block
+Extension version: 18
+Length 121, version 18, extension count 0
+Checksum: 0xc0 (valid)
+Display Parameters block
+Unknown displayid data block 0x29
+Type 1 detailed timing: aspect: 16:9, Preferred  
+Detailed mode: Clock 257.650 MHz, 0 mm x 0 mm
+               3839 3846 3877 3918
+               2159 2159 2166 2189
+               +hsync -vsync
+Type 1 detailed timing: aspect: 16:9,  
+Detailed mode: Clock 401.230 MHz, 0 mm x 0 mm
+               3359 3366 3397 3438
+               1889 1889 1896 1942
+               +hsync -vsync
+Type 1 detailed timing: aspect: 16:9,  
+Detailed mode: Clock 234.580 MHz, 0 mm x 0 mm
+               2559 2566 2597 2638
+               1439 1439 1446 1479
+               +hsync -vsync
+Type 1 detailed timing: aspect: 16:9,  
+Detailed mode: Clock 133.310 MHz, 0 mm x 0 mm
+               1919 1926 1957 1998
+               1079 1079 1086 1109
+               +hsync -vsync
+
+
+DisplayID extension block
+Extension version: 18
+Length 121, version 18, extension count 0
+Checksum: 0xaf (valid)
+Type 1 detailed timing: aspect: 16:9, Preferred  
+Detailed mode: Clock 593.810 MHz, 0 mm x 0 mm
+               4095 4102 4133 4174
+               2303 2303 2310 2368
+               +hsync -vsync
+Type 1 detailed timing: aspect: 16:9, Preferred  
+Detailed mode: Clock 472.440 MHz, 0 mm x 0 mm
+               4095 4102 4133 4174
+               2303 2303 2310 2355
+               +hsync -vsync
+Type 1 detailed timing: aspect: 16:9, Preferred  
+Detailed mode: Clock 292.760 MHz, 0 mm x 0 mm
+               4095 4102 4133 4174
+               2303 2303 2310 2335
+               +hsync -vsync
+Type 1 detailed timing: aspect: 16:9, Preferred  
+Detailed mode: Clock 522.600 MHz, 0 mm x 0 mm
+               3839 3846 3877 3918
+               2159 2159 2166 2220
+               +hsync -vsync
+
+Warning: One or more of the timings is out of range of the Monitor Ranges:
+  Vertical Freq: 59 - 60 Hz
+  Horizontal Freq: 31469 - 133318 Hz
+  Maximum Clock: 522.610 MHz
+EDID block does not conform at all!
+	Has -335544320 nonconformant extension block(s)
