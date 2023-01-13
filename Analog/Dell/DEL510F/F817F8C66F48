@@ -1,64 +1,66 @@
+edid-decode (hex):
 
-EDID (hex):
-00ffffffffffff0010ac0f5155353930
-040a01020e211896eb0cc9a057479b27
-12484ca4430061594559a94031590101
-010101010101c31e0020410020301060
-130038ea1000001e000000ff00363237
-315230314a303935550a000000fc0044
-454c4c20503738300a202020000000fd
-0030781e55ff000a2020202020200044
+00 ff ff ff ff ff ff 00 10 ac 0f 51 55 35 39 30
+04 0a 01 02 0e 21 18 96 eb 0c c9 a0 57 47 9b 27
+12 48 4c a4 43 00 61 59 45 59 a9 40 31 59 01 01
+01 01 01 01 01 01 c3 1e 00 20 41 00 20 30 10 60
+13 00 38 ea 10 00 00 1e 00 00 00 ff 00 36 32 37
+31 52 30 31 4a 30 39 35 55 0a 00 00 00 fc 00 44
+45 4c 4c 20 50 37 38 30 0a 20 20 20 00 00 00 fd
+00 30 78 1e 55 ff 00 0a 20 20 20 20 20 20 00 44
 
-Extracted contents:
-header:          00 ff ff ff ff ff ff 00
-serial number:   10 ac 0f 51 55 35 39 30 04 0a
-version:         01 02
-basic params:    0e 21 18 96 eb
-chroma info:     0c c9 a0 57 47 9b 27 12 48 4c
-established:     a4 43 00
-standard:        61 59 45 59 a9 40 31 59 01 01 01 01 01 01 01 01
-descriptor 1:    c3 1e 00 20 41 00 20 30 10 60 13 00 38 ea 10 00 00 1e
-descriptor 2:    00 00 00 ff 00 36 32 37 31 52 30 31 4a 30 39 35 55 0a
-descriptor 3:    00 00 00 fc 00 44 45 4c 4c 20 50 37 38 30 0a 20 20 20
-descriptor 4:    00 00 00 fd 00 30 78 1e 55 ff 00 0a 20 20 20 20 20 20
-extensions:      00
-checksum:        44
+----------------
 
-EDID version: 1.2
-Manufacturer: DEL Model 510f Serial Number --
-Analog display, Input voltage level: 0.7/0.3 V
-Sync: Separate Composite SyncOnGreen 
-Maximum image size: 33 cm x 24 cm
-Gamma: 2.50
-DPMS levels: Standby Suspend Off
-RGB color display
-First detailed timing is preferred timing
-Supports GTF timings within operating range
-Display x,y Chromaticity:
-  Red:   0.6250, 0.3398
-  Green: 0.2802, 0.6054
-  Blue:  0.1552, 0.0703
-  White: 0.2832, 0.2978
-Established timings supported:
-  720x400@70Hz 9:5 HorFreq: 31469 Hz Clock: 28.320 MHz
-  640x480@60Hz 4:3 HorFreq: 31469 Hz Clock: 25.175 MHz
-  640x480@75Hz 4:3 HorFreq: 37500 Hz Clock: 31.500 MHz
-  800x600@75Hz 4:3 HorFreq: 46900 Hz Clock: 49.500 MHz
-  1024x768@75Hz 4:3 HorFreq: 60000 Hz Clock: 78.750 MHz
-  1280x1024@75Hz 5:4 HorFreq: 80000 Hz Clock: 135.000 MHz
-Standard timings supported:
-  1024x768@85Hz 4:3 HorFreq: 68700 Hz Clock: 94.500 MHz
-  800x600@85Hz 4:3 HorFreq: 53700 Hz Clock: 56.250 MHz
-  1600x1200@60Hz 4:3 HorFreq: 75000 Hz Clock: 162.000 MHz
-  640x480@85Hz 4:3 HorFreq: 43300 Hz Clock: 36.000 MHz
-Detailed mode: Clock 78.750 MHz, 312 mm x 234 mm
-               1024 1040 1136 1312 hborder 0
-                768  769  772  800 vborder 0
-               +hsync +vsync 
-               VertFreq: 75 Hz, HorFreq: 60022 Hz
-Serial number: --
-Monitor name: DELL P780
-Monitor ranges (GTF): 48-120Hz V, 30-85kHz H, max dotclock 2550MHz
-Checksum: 0x44 (valid)
-EDID block does not conform at all!
-	Bad year of manufacture
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.2
+  Vendor & Product Identification:
+    Manufacturer: DEL
+    Model: 20751
+    Serial Number: ...
+    Made in: week 4 of 2000
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate Composite SyncOnGreen
+    Maximum image size: 33 cm x 24 cm
+    Gamma: 2.50
+    DPMS levels: Standby Suspend Off
+    RGB color display
+    First detailed timing is the preferred timing
+    Supports GTF timings within operating range
+  Color Characteristics:
+    Red  : 0.6250, 0.3398
+    Green: 0.2802, 0.6054
+    Blue : 0.1552, 0.0703
+    White: 0.2832, 0.2978
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x13:  1024x768    84.996690 Hz   4:3     68.677 kHz     94.500000 MHz
+    DMT 0x0c:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+    DMT 0x07:   640x480    85.008312 Hz   4:3     43.269 kHz     36.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz (312 mm x 234 mm)
+                 Hfront   16 Hsync  96 Hback  176 Hpol P
+                 Vfront    1 Vsync   3 Vback   28 Vpol P
+    Display Product Serial Number: ...
+    Display Product Name: 'DELL P780'
+    Display Range Limits:
+      Monitor ranges (GTF): 48-120 Hz V, 30-85 kHz H, max dotclock 2550 MHz
+Checksum: 0x44
+
+----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+
+EDID conformity: PASS
