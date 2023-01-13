@@ -1,0 +1,60 @@
+
+EDID (hex):
+00ffffffffffff0009e5bc0800000000
+171d0104a51c137803de50a3544c9926
+0f505400000001010101010101010101
+010101010101115cd01881e02d503020
+36001dbe1000001aa749d01881e02d50
+302036001dbe1000001a000000fe0042
+4f452043510a202020202020000000fe
+004e4531333546424d2d4e34310a009f
+
+Extracted contents:
+header:          00 ff ff ff ff ff ff 00
+serial number:   09 e5 bc 08 00 00 00 00 17 1d
+version:         01 04
+basic params:    a5 1c 13 78 03
+chroma info:     de 50 a3 54 4c 99 26 0f 50 54
+established:     00 00 00
+standard:        01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
+descriptor 1:    11 5c d0 18 81 e0 2d 50 30 20 36 00 1d be 10 00 00 1a
+descriptor 2:    a7 49 d0 18 81 e0 2d 50 30 20 36 00 1d be 10 00 00 1a
+descriptor 3:    00 00 00 fe 00 42 4f 45 20 43 51 0a 20 20 20 20 20 20
+descriptor 4:    00 00 00 fe 00 4e 45 31 33 35 46 42 4d 2d 4e 34 31 0a
+extensions:      00
+checksum:        9f
+
+EDID version: 1.4
+Manufacturer: BOE Model 8bc Serial Number --
+Made in week 23 of 2019
+Digital display
+8 bits per primary color channel
+DisplayPort interface
+Maximum image size: 28 cm x 19 cm
+Gamma: 2.20
+Supported color formats: RGB 4:4:4
+First detailed timing includes the native pixel format and preferred refresh rate
+Display is continuous frequency
+Display x,y Chromaticity:
+  Red:   0.6396, 0.3291
+  Green: 0.2998, 0.5996
+  Blue:  0.1494, 0.0595
+  White: 0.3125, 0.3281
+Established timings supported:
+Standard timings supported:
+Detailed mode: Clock 235.690 MHz, 285 mm x 190 mm
+               2256 2304 2336 2536 hborder 0
+               1504 1507 1513 1549 vborder 0
+               +hsync -vsync 
+               VertFreq: 59 Hz, HorFreq: 92937 Hz
+Detailed mode: Clock 188.550 MHz, 285 mm x 190 mm
+               2256 2304 2336 2536 hborder 0
+               1504 1507 1513 1549 vborder 0
+               +hsync -vsync 
+               VertFreq: 47 Hz, HorFreq: 74349 Hz
+ASCII string: BOE CQ
+ASCII string: NE135FBM-N41
+Checksum: 0x9f (valid)
+EDID block does NOT conform to EDID 1.4!
+	Missing name descriptor
+	Missing monitor ranges
