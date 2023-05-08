@@ -14,6 +14,7 @@ model and ID.
 | AOC              | AOC2260 | 2260W            | 1920x1080 | 21.7 | 2012 | [20547502CE8A](<Analog/AOC/AOC2260/20547502CE8A>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 | 2020 | [D26BE1852650](<Analog/AOC/AOC2470/D26BE1852650>) |
 | AOC              | AOC2470 | 2470W            | 1920x1080 | 23.4 |      | [919D6631E7E5](<Analog/AOC/AOC2470/919D6631E7E5>) |
+| AOC              | AOC2490 | 2490W1           | 1920x1080 | 24.0 | 2018 | [B4A1429EBD58](<Analog/AOC/AOC2490/B4A1429EBD58>) |
 | AOC              | AOC2701 | Q27P1B           | 1920x1080 | 27.2 | 2021 | [602C7599679E](<Analog/AOC/AOC2701/602C7599679E>) |
 | AOC              | AOC2770 | 2770             | 1920x1080 | 27.2 | 2017 | [2CB8BA04805C](<Analog/AOC/AOC2770/2CB8BA04805C>) |
 | ASUS             | AUS24A1 | VG245            | 1920x1080 | 24.0 | 2019 | [33ED80C1F0E8](<Analog/ASUS/AUS24A1/33ED80C1F0E8>) |
@@ -40,6 +41,7 @@ model and ID.
 | Acer             | ACR0424 | V246HQL          | 1920x1080 | 23.4 | 2017 | [DDAFDDD155C1](<Analog/Acer/ACR0424/DDAFDDD155C1>) |
 | Acer             | ACR0497 | KA220HQ          | 1920x1080 | 21.7 | 2015 | [CECAE7317F5F](<Analog/Acer/ACR0497/CECAE7317F5F>) |
 | Acer             | ACR056C | ET241Y           | 1920x1080 | 21.7 | 2017 | [C0925A11A287](<Analog/Acer/ACR056C/C0925A11A287>) |
+| Acer             | ACR1945 | AT1945           | 1440x900  | 18.6 | 2009 | [B3F50E2367E3](<Analog/Acer/ACR1945/B3F50E2367E3>) |
 | Acer             | ACRAD46 | AL1716           | 1280x1024 | 17.1 | 2007 | [5B9ECED98ED4](<Analog/Acer/ACRAD46/5B9ECED98ED4>) |
 | Acer             | ACRAD46 | AL1706           | 1280x1024 | 17.1 | 2006 | [ACDCC56241BF](<Analog/Acer/ACRAD46/ACDCC56241BF>) |
 | Acer             | ACRAD63 | AL1917           | 1280x1024 | 19.1 |      | [39D989FABA5D](<Analog/Acer/ACRAD63/39D989FABA5D>) |
@@ -121,6 +123,7 @@ model and ID.
 | Goldstar         | GSM0001 | LG TV            | 1920x1080 |      | 2010 | [7E9F85899EE9](<Analog/Goldstar/GSM0001/7E9F85899EE9>) |
 | Goldstar         | GSM0001 | HS102-JE         | 1152x864  | 1... | 2007 | [5D09151C2DCD](<Analog/Goldstar/GSM0001/5D09151C2DCD>) |
 | Goldstar         | GSM3BB0 | L1553S           | 1024x768  | 14.9 | 2008 | [B46760D19C54](<Analog/Goldstar/GSM3BB0/B46760D19C54>) |
+| Goldstar         | GSM3E8C | E1642            | 1366x768  | 15.3 | 2013 | [27BC9F254828](<Analog/Goldstar/GSM3E8C/27BC9F254828>) |
 | Goldstar         | GSM4317 | 700E             | 1280x1024 | 16.3 |      | [625E6E1364C4](<Analog/Goldstar/GSM4317/625E6E1364C4>) |
 | Goldstar         | GSM436F | L1715S           | 1280x1024 | 17.1 |      | [920461540B1F](<Analog/Goldstar/GSM436F/920461540B1F>) |
 | Goldstar         | GSM43F1 | L1751SQ          | 1280x1024 | 17.1 |      | [AC4870A1C960](<Analog/Goldstar/GSM43F1/AC4870A1C960>) |
@@ -128,10 +131,12 @@ model and ID.
 | Goldstar         | GSM4A7B | L1920P           | 1280x1024 | 19.1 |      | [D4F3C4A7D006](<Analog/Goldstar/GSM4A7B/D4F3C4A7D006>) |
 | Goldstar         | GSM4AA2 | L1950H           | 1280x1024 | 19.1 | 2006 | [E0D67358B2A4](<Analog/Goldstar/GSM4AA2/E0D67358B2A4>) |
 | Goldstar         | GSM4B05 | L194WT           | 1440x900  | 19.1 | 2007 | [025CCD97F0EB](<Analog/Goldstar/GSM4B05/025CCD97F0EB>) |
+| Goldstar         | GSM4B31 | L1918S           | 1280x1024 | 19.1 | 2008 | [74FE77B2C580](<Analog/Goldstar/GSM4B31/74FE77B2C580>) |
 | Goldstar         | GSM4B31 | L1918S           | 1280x1024 | 19.1 | 2007 | [7E08B4688186](<Analog/Goldstar/GSM4B31/7E08B4688186>) |
 | Goldstar         | GSM4B32 | L192WS           | 1440x900  | 19.1 | 2008 | [B143755822B1](<Analog/Goldstar/GSM4B32/B143755822B1>) |
 | Goldstar         | GSM4B6F | W1942            | 1440x900  | 19.1 | 2008 | [4053A577C577](<Analog/Goldstar/GSM4B6F/4053A577C577>) |
 | Goldstar         | GSM4B6F | W2242            | 1680x1050 | 23.0 | 2008 | [D777426D1DE8](<Analog/Goldstar/GSM4B6F/D777426D1DE8>) |
+| Goldstar         | GSM4B7A | W1934            | 1440x900  | 19.1 | 2009 | [80271DC5F6D0](<Analog/Goldstar/GSM4B7A/80271DC5F6D0>) |
 | Goldstar         | GSM4BAD | W1943            | 1360x768  | 18.5 | 2010 | [27C38DF2B662](<Analog/Goldstar/GSM4BAD/27C38DF2B662>) |
 | Goldstar         | GSM4BAD | W1943            | 1360x768  | 18.5 | 2009 | [CAF8FD63D0C2](<Analog/Goldstar/GSM4BAD/CAF8FD63D0C2>) |
 | Goldstar         | GSM4BF0 | E1941            | 1366x768  | 18.5 |      | [F340730ACB86](<Analog/Goldstar/GSM4BF0/F340730ACB86>) |
@@ -191,6 +196,7 @@ model and ID.
 | Philips          | PHL083F | 190S             | 1280x1024 | 19.1 | 2007 | [BCB8216BA9CE](<Analog/Philips/PHL083F/BCB8216BA9CE>) |
 | Philips          | PHL0848 | 170C             | 1280x1024 | 17.1 | 2006 | [EFBBE3E4FFD0](<Analog/Philips/PHL0848/EFBBE3E4FFD0>) |
 | Philips          | PHL0856 |                  | 1280x1024 | 17.1 |      | [DEE86455748C](<Analog/Philips/PHL0856/DEE86455748C>) |
+| Philips          | PHL0868 |                  | 1680x1050 | 21.7 | 2008 | [0A969427EEF8](<Analog/Philips/PHL0868/0A969427EEF8>) |
 | Philips          | PHL2051 |                  | 1600x900  | 19.9 | 2010 | [A7DF80096D35](<Analog/Philips/PHL2051/A7DF80096D35>) |
 | Philips          | PHLC00B |                  | 1280x1024 | 17.1 |      | [CB8788B99DDE](<Analog/Philips/PHLC00B/CB8788B99DDE>) |
 | Philips          | PHLC02E | 220E             | 1920x1080 | 21.1 | 2010 | [B46928ADEE46](<Analog/Philips/PHLC02E/B46928ADEE46>) |

@@ -11,15 +11,16 @@ by the [hw-probe](https://github.com/linuxhw/hw-probe/blob/master/INSTALL.BSD.md
 
 EDIDs of all connected monitors will be uploaded to the database and repository.
 
-Total monitors: 2247.
+Total monitors: 2321.
 
 Contents
 --------
 
-1. [ About           ](#about)
+1. [ About ](#about)
 2. [ How to install EDID file ](#how-to-install-edid-file)
-3. [ Digital display ](#digital-display)
-4. [ Analog display  ](#analog-display)
+3. [ How to regenerate data ](#how-to-regenerate-data)
+4. [ Digital display ](#digital-display)
+5. [ Analog display  ](#analog-display)
 
 About
 -----
@@ -50,7 +51,7 @@ How to regenerate data
 
 Regenerate all the data by new edid-decode:
 
-    find . -type f -regextype posix-extended -regex '.*/[A-F0-9]{12}$' -print0 | while read -r -d '' file; do cat "$file" | grep -E '^([a-f0-9]{32}|[a-f0-9 ]{47})$' | edid-decode-2022-03-15 -c --skip-sha > /tmp/file; cat /tmp/file > "$file"; done
+    find . -type f -regextype posix-extended -regex '.*/[A-F0-9]{12}$' -print0 | while read -r -d '' file; do cat "$file" | grep -E '^([a-f0-9]{32}|[a-f0-9 ]{47})$' | edid-decode-2023-05-07 -c --skip-sha > /tmp/file; cat /tmp/file > "$file"; done
     find . -type f -regextype posix-extended -regex '.*/[A-F0-9]{12}$' -print0 | while read -r -d '' file; do sed -i -e "s/Serial Number: .*/Serial Number: .../g" "$file"; done
 
 Digital display
@@ -100,6 +101,7 @@ model and ID.
 | AOC              | AOC2481 | 2481W            | 1920x1080 | 24.0 | 2016 | [F7CDAF9CBB7A](<Digital/AOC/AOC2481/F7CDAF9CBB7A>) |
 | AOC              | AOC2577 | Q2577W           | 2560x1440 | 24.9 |      | [F006F7EE780C](<Digital/AOC/AOC2577/F006F7EE780C>) |
 | AOC              | AOC2701 | 27B1             | 1920x1080 | 27.2 | 2020 | [E5A694C128AC](<Digital/AOC/AOC2701/E5A694C128AC>) |
+| AOC              | AOC2752 | 2752             | 1920x1080 | 26.5 | 2014 | [7423AE94054A](<Digital/AOC/AOC2752/7423AE94054A>) |
 | AOC              | AOC2769 | 2769M            | 1920x1080 | 27.2 | 2017 | [A26F14D5E639](<Digital/AOC/AOC2769/A26F14D5E639>) |
 | AOC              | AOC2778 | 2778X            | 2560x1440 | 27.2 | 2017 | [4EDF8DF9D5EB](<Digital/AOC/AOC2778/4EDF8DF9D5EB>) |
 | AOC              | AOC2779 | 2779             | 1920x1080 | 27.2 | 2017 | [ABA2EEF0699E](<Digital/AOC/AOC2779/ABA2EEF0699E>) |
@@ -123,6 +125,7 @@ model and ID.
 | ASUS             | AUS24CA | VP247            | 1920x1080 | 23.4 | 2017 | [3ADE2945B89C](<Digital/ASUS/AUS24CA/3ADE2945B89C>) |
 | ASUS             | AUS24CC | VZ249            | 1920x1080 | 24.0 | 2018 | [88D12BA84F08](<Digital/ASUS/AUS24CC/88D12BA84F08>) |
 | ASUS             | AUS24D1 | VA24E            | 1920x1080 | 24.0 | 2020 | [976B0D9811D3](<Digital/ASUS/AUS24D1/976B0D9811D3>) |
+| ASUS             | AUS24DA | VP247            | 1920x1080 | 23.4 | 2019 | [2B72FE5ECDA2](<Digital/ASUS/AUS24DA/2B72FE5ECDA2>) |
 | ASUS             | AUS25A6 | VG259            | 1920x1080 | 24.3 | 2019 | [7809E38F7973](<Digital/ASUS/AUS25A6/7809E38F7973>) |
 | ASUS             | AUS25B4 | ROG PG259QN      | 1920x1080 | 24.3 | 2021 | [DBF8E1441E36](<Digital/ASUS/AUS25B4/DBF8E1441E36>) |
 | ASUS             | AUS25B5 | ROG PG259QN      | 1920x1080 | 24.3 | 2021 | [F976A594CE23](<Digital/ASUS/AUS25B5/F976A594CE23>) |
@@ -155,6 +158,7 @@ model and ID.
 | AU Optronics     | AUO122D | B133HTN01.2      | 1920x1080 | 13.2 | 2013 | [E3E739DA41C2](<Digital/AU Optronics/AUO122D/E3E739DA41C2>) |
 | AU Optronics     | AUO123D | B140HTN01.2      | 1920x1080 | 13.9 | 2014 | [563D7381A410](<Digital/AU Optronics/AUO123D/563D7381A410>) |
 | AU Optronics     | AUO123D |                  | 1920x1080 | 13.9 | 2013 | [109319C7DE3E](<Digital/AU Optronics/AUO123D/109319C7DE3E>) |
+| AU Optronics     | AUO125C | KG3NX            | 1366x768  | 11.6 | 2016 | [B84529C102A8](<Digital/AU Optronics/AUO125C/B84529C102A8>) |
 | AU Optronics     | AUO12EC | B156XW01 V2      | 1366x768  | 15.3 | 2008 | [31D403CA564A](<Digital/AU Optronics/AUO12EC/31D403CA564A>) |
 | AU Optronics     | AUO133D | B140HAN01.3      | 1920x1080 | 13.9 | 2013 | [6B8EF10A7DD2](<Digital/AU Optronics/AUO133D/6B8EF10A7DD2>) |
 | AU Optronics     | AUO133D | M1WHV            | 1920x1080 | 13.9 |      | [2D87F4C54500](<Digital/AU Optronics/AUO133D/2D87F4C54500>) |
@@ -178,6 +182,7 @@ model and ID.
 | AU Optronics     | AUO20ED | B156HAK02.0      | 1920x1080 | 15.3 | 2018 | [4F4A0EC698DA](<Digital/AU Optronics/AUO20ED/4F4A0EC698DA>) |
 | AU Optronics     | AUO213D | B140HAN02.1      | 1920x1080 | 13.9 | 2015 | [BC825BEDCCCE](<Digital/AU Optronics/AUO213D/BC825BEDCCCE>) |
 | AU Optronics     | AUO213E | B140RW02         | 1600x900  | 13.9 |      | [70CC44D94BF6](<Digital/AU Optronics/AUO213E/70CC44D94BF6>) |
+| AU Optronics     | AUO215C |                  | 1366x768  | 11.6 | 2013 | [C0BD51934254](<Digital/AU Optronics/AUO215C/C0BD51934254>) |
 | AU Optronics     | AUO219D | B173HW02 V1      | 1920x1080 | 17.1 | 2012 | [8F5769EEBA4A](<Digital/AU Optronics/AUO219D/8F5769EEBA4A>) |
 | AU Optronics     | AUO219E | B173RTN02.1      | 1600x900  | 17.1 | 2018 | [EA8215E07498](<Digital/AU Optronics/AUO219E/EA8215E07498>) |
 | AU Optronics     | AUO219E |                  | 1600x900  | 17.1 | 2015 | [ABF93477AB8A](<Digital/AU Optronics/AUO219E/ABF93477AB8A>) |
@@ -189,7 +194,7 @@ model and ID.
 | AU Optronics     | AUO21ED | 35K06            | 1920x1080 | 15.3 | 2011 | [D15B15B1C069](<Digital/AU Optronics/AUO21ED/D15B15B1C069>) |
 | AU Optronics     | AUO21ED | VYY56            | 1920x1080 | 15.3 |      | [A8C6DE0CA4D5](<Digital/AU Optronics/AUO21ED/A8C6DE0CA4D5>) |
 | AU Optronics     | AUO223E |                  | 1600x900  | 13.9 | 2010 | [85251E27B679](<Digital/AU Optronics/AUO223E/85251E27B679>) |
-| AU Optronics     | AUO226D | B125HAN02.2      | 1920x1080 | 12.7 | 2015 | [C743F7F3B8C2](<Digital/AU Optronics/AUO226D/C743F7F3B8C2>) |
+| AU Optronics     | AUO226D |                  | 1920x1080 | 12.7 | 2015 | [C0AF5AE108D4](<Digital/AU Optronics/AUO226D/C0AF5AE108D4>) |
 | AU Optronics     | AUO22EC | B156XTN02.2      | 1366x768  | 15.3 | 2011 | [23C9CB2DC0DB](<Digital/AU Optronics/AUO22EC/23C9CB2DC0DB>) |
 | AU Optronics     | AUO22EC | B156XW02 V2      | 1366x768  | 15.3 | 2009 | [717E5F5EA51D](<Digital/AU Optronics/AUO22EC/717E5F5EA51D>) |
 | AU Optronics     | AUO22ED |                  | 1920x1080 | 15.3 | 2016 | [BEFAE05B6156](<Digital/AU Optronics/AUO22ED/BEFAE05B6156>) |
@@ -247,6 +252,7 @@ model and ID.
 | AU Optronics     | AUO403D | B140HAN04.0      | 1920x1080 | 13.9 | 2018 | [023FA473395D](<Digital/AU Optronics/AUO403D/023FA473395D>) |
 | AU Optronics     | AUO403D | B140HAN04.0      | 1920x1080 | 13.9 | 2017 | [F53E51906963](<Digital/AU Optronics/AUO403D/F53E51906963>) |
 | AU Optronics     | AUO405C | B116XAN04.0      | 1366x768  | 11.6 | 2015 | [F202911B65D1](<Digital/AU Optronics/AUO405C/F202911B65D1>) |
+| AU Optronics     | AUO408D |                  | 1920x1080 | 13.9 | 2019 | [4BFAD2B09022](<Digital/AU Optronics/AUO408D/4BFAD2B09022>) |
 | AU Optronics     | AUO40EC | B156XTN04.0      | 1366x768  | 15.3 | 2013 | [8990F89A93A5](<Digital/AU Optronics/AUO40EC/8990F89A93A5>) |
 | AU Optronics     | AUO4100 | B101UAN01        | 1920x1200 | 10.3 |      | [2EDA34E7BB6A](<Digital/AU Optronics/AUO4100/2EDA34E7BB6A>) |
 | AU Optronics     | AUO4199 | 61FT0            | 1920x1080 | 15.3 | 2021 | [6FBC33D10034](<Digital/AU Optronics/AUO4199/6FBC33D10034>) |
@@ -317,6 +323,7 @@ model and ID.
 | Acer             | ACR03DE | G227HQL          | 1920x1080 | 21.7 | 2018 | [D27B53914DCD](<Digital/Acer/ACR03DE/D27B53914DCD>) |
 | Acer             | ACR03E0 | K202HQL          | 1600x900  | 19.4 | 2016 | [3DC8E8981776](<Digital/Acer/ACR03E0/3DC8E8981776>) |
 | Acer             | ACR03E3 | K242HL           | 1920x1080 | 24.0 | 2015 | [CD169204C036](<Digital/Acer/ACR03E3/CD169204C036>) |
+| Acer             | ACR03FB | G277HL           | 1920x1080 | 27.2 | 2015 | [CB7B645E65A3](<Digital/Acer/ACR03FB/CB7B645E65A3>) |
 | Acer             | ACR040D | K222HQL          | 1920x1080 | 21.7 | 2014 | [8C17C9F06049](<Digital/Acer/ACR040D/8C17C9F06049>) |
 | Acer             | ACR042D | G277HL           | 1920x1080 | 27.2 |      | [D7B47CBC676D](<Digital/Acer/ACR042D/D7B47CBC676D>) |
 | Acer             | ACR0467 | KA220HQ          | 1920x1080 | 21.7 | 2018 | [9CB6678592AE](<Digital/Acer/ACR0467/9CB6678592AE>) |
@@ -352,10 +359,13 @@ model and ID.
 | Acer             | ACR077B | EG240Y           | 1920x1080 | 24.0 | 2020 | [97DEDA5B1E98](<Digital/Acer/ACR077B/97DEDA5B1E98>) |
 | Acer             | ACR077C | AL1916           | 1280x1024 | 19.3 | 2007 | [B666ACDCE669](<Digital/Acer/ACR077C/B666ACDCE669>) |
 | Acer             | ACR078B | XZ342CK          | 3440x1440 | 34.1 | 2020 | [214972A03DE2](<Digital/Acer/ACR078B/214972A03DE2>) |
+| Acer             | ACR079C | QG241Y           | 1920x1080 | 24.0 | 2021 | [C7F5AC830C5A](<Digital/Acer/ACR079C/C7F5AC830C5A>) |
 | Acer             | ACR099D | KW272U           | 2560x1440 | 27.2 | 2021 | [08B16C8C50DB](<Digital/Acer/ACR099D/08B16C8C50DB>) |
+| Acer             | ACR40B0 | AIO LCD          | 1600x900  | 19.2 | 2015 | [9DED93FB4312](<Digital/Acer/ACR40B0/9DED93FB4312>) |
 | Acer             | ACRAD49 | AL1916           | 1280x1024 | 19.1 | 2008 | [CAC6B899CD2F](<Digital/Acer/ACRAD49/CAC6B899CD2F>) |
 | Acer             | ACRAD52 | AL1916W          | 1440x900  | 19.1 | 2006 | [DADB5EE85852](<Digital/Acer/ACRAD52/DADB5EE85852>) |
 | Acer             | ACRAD84 | AL2223W          | 1680x1050 | 22.0 |      | [F48DBBF9C1EE](<Digital/Acer/ACRAD84/F48DBBF9C1EE>) |
+| Amazon           | AMZ0000 | FireTV           | 3840x2160 |      | 2021 | [7CE9EBF53712](<Digital/Amazon/AMZ0000/7CE9EBF53712>) |
 | Ancor Communi... | ACI19ED | ASUS VW199       | 1440x900  | 19.1 | 2012 | [CD5A5DA3E8F6](<Digital/Ancor Communications/ACI19ED/CD5A5DA3E8F6>) |
 | Ancor Communi... | ACI20A2 | VW202            | 1680x1050 | 20.0 | 2008 | [D009197B0767](<Digital/Ancor Communications/ACI20A2/D009197B0767>) |
 | Ancor Communi... | ACI22AA | ASUS VW224       | 1680x1050 | 22.0 | 2011 | [34864350C5BD](<Digital/Ancor Communications/ACI22AA/34864350C5BD>) |
@@ -456,6 +466,7 @@ model and ID.
 | BOE              | BOE0620 | PDJJH            | 1366x768  | 15.3 | 2014 | [26B5D7183E1C](<Digital/BOE/BOE0620/26B5D7183E1C>) |
 | BOE              | BOE062B | HF HB156FH1-401  | 1920x1080 | 15.3 | 2014 | [AF513EDE35ED](<Digital/BOE/BOE062B/AF513EDE35ED>) |
 | BOE              | BOE062C | HF NT156WHM-N20  | 1366x768  | 15.3 | 2014 | [4F3564BC6D6E](<Digital/BOE/BOE062C/4F3564BC6D6E>) |
+| BOE              | BOE0630 | CQ               | 1920x1080 | 15.3 | 2016 | [6D1095919667](<Digital/BOE/BOE0630/6D1095919667>) |
 | BOE              | BOE0630 | HF NV156FHM-N42  | 1920x1080 | 15.3 | 2015 | [D3D62715E53D](<Digital/BOE/BOE0630/D3D62715E53D>) |
 | BOE              | BOE0643 | C7CN7            | 1920x1080 | 12.2 | 2015 | [EFDBCA373951](<Digital/BOE/BOE0643/EFDBCA373951>) |
 | BOE              | BOE0653 | 6J1Y3            | 1920x1080 | 13.9 | 2015 | [AD98454CEFA1](<Digital/BOE/BOE0653/AD98454CEFA1>) |
@@ -463,6 +474,7 @@ model and ID.
 | BOE              | BOE065E | HF NV156FHM-N42  | 1920x1080 | 15.3 | 2015 | [910051389624](<Digital/BOE/BOE065E/910051389624>) |
 | BOE              | BOE0662 |                  | 1366x768  | 15.3 | 2015 | [CF22E4BFE2EC](<Digital/BOE/BOE0662/CF22E4BFE2EC>) |
 | BOE              | BOE0671 | NCH65            | 1366x768  | 15.3 |      | [6C02CBC4CDF6](<Digital/BOE/BOE0671/6C02CBC4CDF6>) |
+| BOE              | BOE0672 | CQ               | 1366x768  | 15.3 | 2015 | [82C1437E5066](<Digital/BOE/BOE0672/82C1437E5066>) |
 | BOE              | BOE0674 | FVGPP            | 1366x768  | 15.3 | 2016 | [537C495560F2](<Digital/BOE/BOE0674/537C495560F2>) |
 | BOE              | BOE0675 | CQ NT156WHM-N42  | 1366x768  | 15.3 | 2015 | [F55D8D86D840](<Digital/BOE/BOE0675/F55D8D86D840>) |
 | BOE              | BOE0685 |                  | 1600x900  | 17.1 | 2015 | [D4C791D73562](<Digital/BOE/BOE0685/D4C791D73562>) |
@@ -546,9 +558,12 @@ model and ID.
 | BOE              | BOE0899 | HYDIS HT12X21... | 1024x768  | 11.8 |      | [7BB274DDFC59](<Digital/BOE/BOE0899/7BB274DDFC59>) |
 | BOE              | BOE08A6 |                  | 1920x1080 | 13.2 | 2019 | [AA24C2261A3C](<Digital/BOE/BOE08A6/AA24C2261A3C>) |
 | BOE              | BOE08BC | CQ NE135FBM-N41  | 2256x1504 | 13.3 | 2019 | [1B1BC5370C64](<Digital/BOE/BOE08BC/1B1BC5370C64>) |
+| BOE              | BOE08BE | NV173FHM-NX1     | 1920x1080 | 17.1 | 2019 | [2A5C97A25211](<Digital/BOE/BOE08BE/2A5C97A25211>) |
 | BOE              | BOE08CD | 96M67            | 1366x768  | 15.3 | 2019 | [E092DCFF7FE3](<Digital/BOE/BOE08CD/E092DCFF7FE3>) |
 | BOE              | BOE08D6 | CQ NV140FHM-N4U  | 1920x1080 | 13.9 | 2019 | [B68585DA4FBE](<Digital/BOE/BOE08D6/B68585DA4FBE>) |
 | BOE              | BOE08D7 | CQ NV140FHM-N4V  | 1920x1080 | 13.9 | 2019 | [2B47B3C16FA6](<Digital/BOE/BOE08D7/2B47B3C16FA6>) |
+| BOE              | BOE08E2 | CQ               | 1920x1080 | 15.3 | 2019 | [211270C91C7A](<Digital/BOE/BOE08E2/211270C91C7A>) |
+| BOE              | BOE08EE | CQ               | 1920x1080 | 13.9 | 2019 | [883A7F581FB1](<Digital/BOE/BOE08EE/883A7F581FB1>) |
 | BOE              | BOE0900 | CQ NV156FHM-N6A  | 1920x1080 | 15.3 | 2019 | [D640AA82DC31](<Digital/BOE/BOE0900/D640AA82DC31>) |
 | BOE              | BOE0910 | CQ NV156FHM-NX4  | 1920x1080 | 15.3 | 2020 | [458A82A5364D](<Digital/BOE/BOE0910/458A82A5364D>) |
 | BOE              | BOE0928 | 2GMF6            | 1920x1080 | 15.3 | 2020 | [A0F99B2A2C22](<Digital/BOE/BOE0928/A0F99B2A2C22>) |
@@ -560,6 +575,8 @@ model and ID.
 | BOE              | BOE096F | QV116FHB-N80     | 1920x1080 | 11.3 | 2020 | [6354862107A8](<Digital/BOE/BOE096F/6354862107A8>) |
 | BOE              | BOE0973 | CQ NE156QHM-NY1  | 2560x1440 | 15.3 | 2020 | [F48473144815](<Digital/BOE/BOE0973/F48473144815>) |
 | BOE              | BOE0982 | HF NE140QUM-N6A  | 3840x2160 | 13.9 | 2020 | [57D4473708BA](<Digital/BOE/BOE0982/57D4473708BA>) |
+| BOE              | BOE0998 | CQ               | 1920x1080 | 15.3 | 2020 | [5BCC73641EAA](<Digital/BOE/BOE0998/5BCC73641EAA>) |
+| BOE              | BOE09D1 |                  | 1920x1080 | 13.9 | 2020 | [934FAF2EFA50](<Digital/BOE/BOE09D1/934FAF2EFA50>) |
 | BOE              | BOE09D2 | CQ NV156FHM-N48  | 1920x1080 | 15.3 | 2020 | [FD17CE36664F](<Digital/BOE/BOE09D2/FD17CE36664F>) |
 | BOE              | BOE0A39 | CQ NT156FHM-TS0  | 1920x1080 | 15.3 | 2021 | [86CFA0B22C63](<Digital/BOE/BOE0A39/86CFA0B22C63>) |
 | BUFFALO          | BUF2202 | FTD              | 1920x1200 | 22.0 |      | [0716149E2982](<Digital/BUFFALO/BUF2202/0716149E2982>) |
@@ -577,6 +594,7 @@ model and ID.
 | BenQ             | BNQ78B7 | G2255            | 1920x1080 | 21.7 | 2012 | [6655BE00DDB9](<Digital/BenQ/BNQ78B7/6655BE00DDB9>) |
 | BenQ             | BNQ78C4 | GW2260           | 1920x1080 | 21.7 | 2013 | [27E04B2570F8](<Digital/BenQ/BNQ78C4/27E04B2570F8>) |
 | BenQ             | BNQ78C4 |                  | 1920x1080 | 21.7 |      | [E074D6EB772D](<Digital/BenQ/BNQ78C4/E074D6EB772D>) |
+| BenQ             | BNQ78CA |                  | 1920x1080 | 27.2 | 2016 | [EC2D87736EA4](<Digital/BenQ/BNQ78CA/EC2D87736EA4>) |
 | BenQ             | BNQ78CD | GW2255           | 1920x1080 | 21.7 | 2014 | [3DCB57AC7DE1](<Digital/BenQ/BNQ78CD/3DCB57AC7DE1>) |
 | BenQ             | BNQ78CE | GL2460           | 1920x1080 | 24.0 | 2014 | [65EA5701E598](<Digital/BenQ/BNQ78CE/65EA5701E598>) |
 | BenQ             | BNQ78D5 | GL2760           | 1920x1080 | 27.2 | 2018 | [D9BA5AFBE975](<Digital/BenQ/BNQ78D5/D9BA5AFBE975>) |
@@ -691,10 +709,12 @@ model and ID.
 | Chimei Innolux   | CMN14E1 | N140HCE-GP2      | 1920x1080 | 13.9 | 2017 | [DE7EADBD6400](<Digital/Chimei Innolux/CMN14E1/DE7EADBD6400>) |
 | Chimei Innolux   | CMN14E3 |                  | 1366x768  | 13.9 | 2017 | [0A4178EC415F](<Digital/Chimei Innolux/CMN14E3/0A4178EC415F>) |
 | Chimei Innolux   | CMN14E5 |                  | 1920x1080 | 13.9 | 2018 | [A82FE3FEE551](<Digital/Chimei Innolux/CMN14E5/A82FE3FEE551>) |
+| Chimei Innolux   | CMN14E9 | 6WW5K            | 1920x1080 | 13.9 | 2018 | [D2CB85675347](<Digital/Chimei Innolux/CMN14E9/D2CB85675347>) |
 | Chimei Innolux   | CMN14F2 | N140HCG-GQ2      | 1920x1080 | 13.9 | 2018 | [79BCB9593EAC](<Digital/Chimei Innolux/CMN14F2/79BCB9593EAC>) |
 | Chimei Innolux   | CMN1509 | KFMYW            | 1920x1080 | 15.3 | 2018 | [5209EEDBF17B](<Digital/Chimei Innolux/CMN1509/5209EEDBF17B>) |
 | Chimei Innolux   | CMN150D |                  | 1920x1080 | 15.3 | 2018 | [B11D1EFB0652](<Digital/Chimei Innolux/CMN150D/B11D1EFB0652>) |
 | Chimei Innolux   | CMN1521 | N156HRA-EA1      | 1920x1080 | 15.3 | 2020 | [36D17FDD3A57](<Digital/Chimei Innolux/CMN1521/36D17FDD3A57>) |
+| Chimei Innolux   | CMN152A |                  | 2560x1440 | 15.3 | 2020 | [E52A52B53D2E](<Digital/Chimei Innolux/CMN152A/E52A52B53D2E>) |
 | Chimei Innolux   | CMN152E | CNC9J            | 1920x1080 | 15.3 | 2020 | [AB085C78997B](<Digital/Chimei Innolux/CMN152E/AB085C78997B>) |
 | Chimei Innolux   | CMN1542 |                  | 1366x768  | 15.3 | 2021 | [069F50C053DF](<Digital/Chimei Innolux/CMN1542/069F50C053DF>) |
 | Chimei Innolux   | CMN15A9 | 53DC3            | 1366x768  | 15.3 | 2011 | [0B7049F6CB38](<Digital/Chimei Innolux/CMN15A9/0B7049F6CB38>) |
@@ -714,6 +734,7 @@ model and ID.
 | Chimei Innolux   | CMN15C4 | N156HGE-EAB      | 1920x1080 | 15.3 | 2013 | [7FB93C0C40C4](<Digital/Chimei Innolux/CMN15C4/7FB93C0C40C4>) |
 | Chimei Innolux   | CMN15C5 | F4X6Y            | 1366x768  | 15.3 | 2014 | [7CB725BA1B84](<Digital/Chimei Innolux/CMN15C5/7CB725BA1B84>) |
 | Chimei Innolux   | CMN15C6 | 1TT80            | 1366x768  | 15.3 | 2016 | [436D8AAAEAE4](<Digital/Chimei Innolux/CMN15C6/436D8AAAEAE4>) |
+| Chimei Innolux   | CMN15C9 | N156BGE-E32      | 1366x768  | 15.3 | 2013 | [D72B575F2000](<Digital/Chimei Innolux/CMN15C9/D72B575F2000>) |
 | Chimei Innolux   | CMN15CA | 53MPX            | 1366x768  | 15.3 | 2014 | [29D08E480AEE](<Digital/Chimei Innolux/CMN15CA/29D08E480AEE>) |
 | Chimei Innolux   | CMN15CB | N156HGE-EBB      | 1920x1080 | 15.3 | 2014 | [AC959366DD80](<Digital/Chimei Innolux/CMN15CB/AC959366DD80>) |
 | Chimei Innolux   | CMN15CC |                  | 1366x768  | 15.3 | 2015 | [5E9CE9062651](<Digital/Chimei Innolux/CMN15CC/5E9CE9062651>) |
@@ -762,6 +783,7 @@ model and ID.
 | Dell             | DEL40DD | UP2716D          | 2560x1440 | 27.2 | 2015 | [B3A00450D2F7](<Digital/Dell/DEL40DD/B3A00450D2F7>) |
 | Dell             | DEL40F3 | P2317H           | 1920x1080 | 21.7 | 2015 | [9A531C5DF61A](<Digital/Dell/DEL40F3/9A531C5DF61A>) |
 | Dell             | DEL40F7 | P2717H           | 1920x1080 | 27.2 | 2017 | [1BA8D47AB80C](<Digital/Dell/DEL40F7/1BA8D47AB80C>) |
+| Dell             | DEL4116 | UP2718Q          | 3840x2160 | 27.2 | 2018 | [CB7D80EACB26](<Digital/Dell/DEL4116/CB7D80EACB26>) |
 | Dell             | DEL4123 | S2418HN/NX       | 1920x1080 | 24.0 | 2017 | [FC7C3249DB72](<Digital/Dell/DEL4123/FC7C3249DB72>) |
 | Dell             | DEL413C | U2518D           | 2560x1440 | 24.9 | 2019 | [48A9C9233A07](<Digital/Dell/DEL413C/48A9C9233A07>) |
 | Dell             | DEL413C | U2518D           | 2560x1440 | 24.9 | 2018 | [1023B4DB286A](<Digital/Dell/DEL413C/1023B4DB286A>) |
@@ -814,11 +836,13 @@ model and ID.
 | Dell             | DELA0BA | U2415            | 1920x1200 | 24.0 | 2017 | [C0BBA4646618](<Digital/Dell/DELA0BA/C0BBA4646618>) |
 | Dell             | DELA0BA | U2415            | 1920x1200 | 24.0 | 2016 | [419EA94ACC76](<Digital/Dell/DELA0BA/419EA94ACC76>) |
 | Dell             | DELA0BA | U2415            | 1920x1200 | 24.0 | 2014 | [107CFDAA8A48](<Digital/Dell/DELA0BA/107CFDAA8A48>) |
+| Dell             | DELA0BE | P2415Q           | 3840x2160 | 24.0 | 2016 | [98D3F1487D7C](<Digital/Dell/DELA0BE/98D3F1487D7C>) |
 | Dell             | DELA0BE | P2415Q           | 3840x2160 | 24.0 | 2015 | [8434B57C0329](<Digital/Dell/DELA0BE/8434B57C0329>) |
 | Dell             | DELA0C0 | P2415Q           | 3840x2160 | 24.0 | 2015 | [AD5716A3042E](<Digital/Dell/DELA0C0/AD5716A3042E>) |
 | Dell             | DELA0D1 | S2716DG          | 2560x1440 | 27.2 | 2018 | [2549E60E1BF7](<Digital/Dell/DELA0D1/2549E60E1BF7>) |
 | Dell             | DELA0DC | P2417H           | 1920x1080 | 24.0 | 2017 | [826BB568F9CE](<Digital/Dell/DELA0DC/826BB568F9CE>) |
 | Dell             | DELA0DF |                  | 3440x1440 | 34.1 |      | [B93581BF74CD](<Digital/Dell/DELA0DF/B93581BF74CD>) |
+| Dell             | DELA0E0 | U3417W           | 3440x1440 | 34.1 | 2016 | [9FE09B0A76CB](<Digital/Dell/DELA0E0/9FE09B0A76CB>) |
 | Dell             | DELA0E7 | S2417DG          | 2560x1440 | 24.0 | 2016 | [526BC507A9F1](<Digital/Dell/DELA0E7/526BC507A9F1>) |
 | Dell             | DELA0E9 | U2718Q           | 3840x2160 | 27.7 | 2020 | [B0E55603CB88](<Digital/Dell/DELA0E9/B0E55603CB88>) |
 | Dell             | DELA0EC | U2718Q           | 3840x2160 | 27.7 | 2019 | [73D3B5911F87](<Digital/Dell/DELA0EC/73D3B5911F87>) |
@@ -829,6 +853,7 @@ model and ID.
 | Dell             | DELA195 | S2721Q           | 3840x2160 | 27.2 | 2021 | [C67B52FECB28](<Digital/Dell/DELA195/C67B52FECB28>) |
 | Dell             | DELA196 | S2721QS          | 3840x2160 | 27.2 | 2021 | [628688B3127E](<Digital/Dell/DELA196/628688B3127E>) |
 | Dell             | DELA198 | S2721QS          | 3840x2160 | 27.2 | 2021 | [59E97BDE1F40](<Digital/Dell/DELA198/59E97BDE1F40>) |
+| Dell             | DELA19A | S2721D           | 2560x1440 | 26.6 | 2021 | [37F85ED84986](<Digital/Dell/DELA19A/37F85ED84986>) |
 | Dell             | DELD015 | E228WFP          | 1680x1050 | 22.0 | 2007 | [88BCB26AFEB2](<Digital/Dell/DELD015/88BCB26AFEB2>) |
 | Dell             | DELD01C | SP2309W          | 2048x1152 | 23.1 | 2010 | [D7A26C7D17DB](<Digital/Dell/DELD01C/D7A26C7D17DB>) |
 | Dell             | DELD047 | U2212HM          | 1920x1080 | 21.7 | 2012 | [EECF1A89910B](<Digital/Dell/DELD047/EECF1A89910B>) |
@@ -869,7 +894,10 @@ model and ID.
 | Dell             | DELF046 | U2413            | 1920x1200 | 24.0 | 2012 | [A5C39B3939BA](<Digital/Dell/DELF046/A5C39B3939BA>) |
 | Dell             | DELF065 | E1916H           | 1366x768  | 18.5 | 2019 | [B6957407B536](<Digital/Dell/DELF065/B6957407B536>) |
 | Dell             | DELF065 | E1916H           | 1366x768  | 18.5 | 2015 | [FAF080ABED5D](<Digital/Dell/DELF065/FAF080ABED5D>) |
+| Dell             | DELF06E | E2016HV          | 1600x900  | 19.4 | 2018 | [C232B63A886A](<Digital/Dell/DELF06E/C232B63A886A>) |
 | Dell             | DELF06F | E2216HV          | 1920x1080 | 21.7 | 2018 | [84FD5B186C02](<Digital/Dell/DELF06F/84FD5B186C02>) |
+| Dell             | DELF10D | SE2719H          | 1920x1080 | 27.2 | 2020 | [9EBFEDBE9887](<Digital/Dell/DELF10D/9EBFEDBE9887>) |
+| Dell             | LNK0001 |                  | 1920x1080 | 14.9 | 2018 | [8CEF7FDEFCD6](<Digital/Dell/LNK0001/8CEF7FDEFCD6>) |
 | Denver           | LHC2900 | UXGA-100-C       | 2560x1080 | 29.0 | 2019 | [D4AEF984D71D](<Digital/Denver/LHC2900/D4AEF984D71D>) |
 | Eizo             | ENC1687 | L767             | 1280x1024 | 19.1 |      | [7EF7C07DD75D](<Digital/Eizo/ENC1687/7EF7C07DD75D>) |
 | Eizo             | ENC1916 | S2201W           | 1680x1050 | 22.3 | 2007 | [B3F73A732309](<Digital/Eizo/ENC1916/B3F73A732309>) |
@@ -900,12 +928,12 @@ model and ID.
 | Gigabyte Tech... | GBT2800 | M28U             | 3840x2160 | 28.6 | 2021 | [D8023A227C50](<Digital/Gigabyte Technology/GBT2800/D8023A227C50>) |
 | Goldstar         | GSM0001 | LG TV            | 1360x768  |      | 2019 | [4C6B68BC1416](<Digital/Goldstar/GSM0001/4C6B68BC1416>) |
 | Goldstar         | GSM0001 | LG TV            | 3840x2160 |      | 2018 | [26E72AFD12C6](<Digital/Goldstar/GSM0001/26E72AFD12C6>) |
-| Goldstar         | GSM0001 | LG TV            | 3840x2160 |      | 2017 | [B5A81E73F3AB](<Digital/Goldstar/GSM0001/B5A81E73F3AB>) |
+| Goldstar         | GSM0001 | LG TV            | 3840x2160 |      | 2017 | [32190EE59A30](<Digital/Goldstar/GSM0001/32190EE59A30>) |
 | Goldstar         | GSM0001 | LG TV            | 1360x768  |      | 2017 | [D37FD7C59B20](<Digital/Goldstar/GSM0001/D37FD7C59B20>) |
 | Goldstar         | GSM0001 | LG TV            | 3840x2160 |      | 2016 | [7C9468F0979D](<Digital/Goldstar/GSM0001/7C9468F0979D>) |
 | Goldstar         | GSM0001 | LG TV            | 1920x1080 |      | 2015 | [BA9A7E1E4419](<Digital/Goldstar/GSM0001/BA9A7E1E4419>) |
+| Goldstar         | GSM0001 | LG TV            | 1920x1080 |      | 2014 | [1C5B72ADECB4](<Digital/Goldstar/GSM0001/1C5B72ADECB4>) |
 | Goldstar         | GSM0001 | LG TV            | 1366x768  | 31.2 | 2014 | [537041F7648A](<Digital/Goldstar/GSM0001/537041F7648A>) |
-| Goldstar         | GSM0001 | LG TV            | 1920x1080 |      | 2014 | [861AE00AB64F](<Digital/Goldstar/GSM0001/861AE00AB64F>) |
 | Goldstar         | GSM0001 | LG TV            | 1360x768  |      | 2013 | [F04D26436D3F](<Digital/Goldstar/GSM0001/F04D26436D3F>) |
 | Goldstar         | GSM0001 | LG TV            | 1920x1080 |      | 2011 | [5964FB89FD7C](<Digital/Goldstar/GSM0001/5964FB89FD7C>) |
 | Goldstar         | GSM3B99 | L1530P           | 1024x768  | 14.9 |      | [A04CE2A58146](<Digital/Goldstar/GSM3B99/A04CE2A58146>) |
@@ -942,6 +970,7 @@ model and ID.
 | Goldstar         | GSM59A5 | 22EA53           | 1920x1080 | 21.7 | 2013 | [2B1ABF1EE8EA](<Digital/Goldstar/GSM59A5/2B1ABF1EE8EA>) |
 | Goldstar         | GSM59A6 | 22EA53           | 1920x1080 | 21.7 | 2012 | [3EFB6D48F827](<Digital/Goldstar/GSM59A6/3EFB6D48F827>) |
 | Goldstar         | GSM59A8 | 23EA53           | 1920x1080 | 23.1 | 2013 | [62790D96420B](<Digital/Goldstar/GSM59A8/62790D96420B>) |
+| Goldstar         | GSM59A9 | 23EA53           | 1920x1080 | 23.1 | 2013 | [BCD8442E9582](<Digital/Goldstar/GSM59A9/BCD8442E9582>) |
 | Goldstar         | GSM59C6 | 2D FHD LG TV     | 1920x1080 | 23.1 | 2013 | [47ABC4186BB9](<Digital/Goldstar/GSM59C6/47ABC4186BB9>) |
 | Goldstar         | GSM59F1 | LG ULTRAWIDE     | 2560x1080 | 28.6 | 2016 | [75E79C24EDCD](<Digital/Goldstar/GSM59F1/75E79C24EDCD>) |
 | Goldstar         | GSM59F1 | LG ULTRAWIDE     | 2560x1080 | 34.2 | 2016 | [D31FCCD9540B](<Digital/Goldstar/GSM59F1/D31FCCD9540B>) |
@@ -981,6 +1010,7 @@ model and ID.
 | Goldstar         | GSM5B71 | 27GL650F         | 1920x1080 | 24.0 | 2020 | [982B38C6C992](<Digital/Goldstar/GSM5B71/982B38C6C992>) |
 | Goldstar         | GSM5B7F | 27GL850          | 2560x1440 | 27.2 | 2020 | [5EE5943F2E4E](<Digital/Goldstar/GSM5B7F/5EE5943F2E4E>) |
 | Goldstar         | GSM5B95 | LG HDR QHD       | 2560x1440 | 31.5 | 2020 | [D3B654F10D8E](<Digital/Goldstar/GSM5B95/D3B654F10D8E>) |
+| Goldstar         | GSM5BA0 | LG HDR WFHD      | 2560x1080 | 34.2 | 2021 | [0793B2BE3E2D](<Digital/Goldstar/GSM5BA0/0793B2BE3E2D>) |
 | Goldstar         | GSM76E3 | LG ULTRAWIDE     | 3440x1440 | 34.2 | 2015 | [4EB55FE8AFE1](<Digital/Goldstar/GSM76E3/4EB55FE8AFE1>) |
 | Goldstar         | GSM76F5 |                  | 1920x1080 | 31.5 | 2014 | [7910FB2664D7](<Digital/Goldstar/GSM76F5/7910FB2664D7>) |
 | Goldstar         | GSM76F9 | LG ULTRAWIDE     | 2560x1080 | 34.2 | 2019 | [7A88AF06095E](<Digital/Goldstar/GSM76F9/7A88AF06095E>) |
@@ -998,11 +1028,13 @@ model and ID.
 | Goldstar         | GSM773B | 34GL750          | 2560x1080 | 34.2 | 2020 | [6995803B1710](<Digital/Goldstar/GSM773B/6995803B1710>) |
 | Goldstar         | GSM774B | 34GN850          | 3440x1440 | 34.1 |      | [B186D92617BE](<Digital/Goldstar/GSM774B/B186D92617BE>) |
 | Goldstar         | GSM7765 | LG ULTRAGEAR     | 2560x1440 | 31.5 | 2021 | [1C338854751E](<Digital/Goldstar/GSM7765/1C338854751E>) |
+| Goldstar         | GSM7766 | LG ULTRAGEAR     | 2560x1440 | 31.5 | 2021 | [5095D3BC68C2](<Digital/Goldstar/GSM7766/5095D3BC68C2>) |
 | Goldstar         | GSM776E | LG ULTRAGEAR     | 2560x1440 | 31.5 | 2021 | [796718A0D85E](<Digital/Goldstar/GSM776E/796718A0D85E>) |
 | Goldstar         | GSMC0A0 | LG TV            | 3840x2160 |      | 2019 | [82E4995F674A](<Digital/Goldstar/GSMC0A0/82E4995F674A>) |
 | Grundig          | GRR2400 | GRC              | 1920x1080 | 23.8 | 2016 | [5DC73BE40F6B](<Digital/Grundig/GRR2400/5DC73BE40F6B>) |
 | HKC              | HKC0000 | MU32V1           | 2560x1440 | 31.5 | 2021 | [DBF3849F1657](<Digital/HKC/HKC0000/DBF3849F1657>) |
 | HKC              | HKC0000 | M24G1F           | 1920x1080 | 23.4 | 2018 | [7B1B069A8597](<Digital/HKC/HKC0000/7B1B069A8597>) |
+| HKC              | HKC3D05 | MY               | 1920x1080 | 15.3 | 2022 | [5EEDD5CE94BB](<Digital/HKC/HKC3D05/5EEDD5CE94BB>) |
 | HP               | HPN3393 | 24ea             | 1920x1080 | 24.0 | 2020 | [09C70B9E68F5](<Digital/HP/HPN3393/09C70B9E68F5>) |
 | HP               | HPN3425 |                  | 1920x1080 | 24.3 | 2018 | [C4946E5C1AF0](<Digital/HP/HPN3425/C4946E5C1AF0>) |
 | HP               | HPN342E | 22w              | 1920x1080 | 21.7 | 2018 | [F0BD810F889A](<Digital/HP/HPN342E/F0BD810F889A>) |
@@ -1013,7 +1045,8 @@ model and ID.
 | HP               | HPN3465 | E243m            | 1920x1080 | 24.0 | 2018 | [5CA8B80FBC66](<Digital/HP/HPN3465/5CA8B80FBC66>) |
 | HP               | HPN3485 | Z24n G2          | 1920x1200 | 24.0 | 2019 | [19D303E29E91](<Digital/HP/HPN3485/19D303E29E91>) |
 | HP               | HPN348A | Z27n G2          | 2560x1440 | 27.2 | 2020 | [AD6FA9DBCDAA](<Digital/HP/HPN348A/AD6FA9DBCDAA>) |
-| HP               | HPN3494 | 27w              | 1920x1080 | 27.2 | 2018 | [5FE71340E703](<Digital/HP/HPN3494/5FE71340E703>) |
+| HP               | HPN3494 | 27w              | 1920x1080 | 27.2 | 2018 | [25937FAF3D75](<Digital/HP/HPN3494/25937FAF3D75>) |
+| HP               | HPN3504 | 24y              | 1920x1080 | 24.0 | 2019 | [2D12406456C8](<Digital/HP/HPN3504/2D12406456C8>) |
 | HP               | HPN351A |                  | 1920x1080 | 31.5 | 2021 | [A025E9D9760C](<Digital/HP/HPN351A/A025E9D9760C>) |
 | HP               | HPN3545 | 24fw             | 1920x1080 | 24.0 | 2018 | [1739CD4A2C36](<Digital/HP/HPN3545/1739CD4A2C36>) |
 | HP               | HPN354A | 27f              | 1920x1080 | 27.2 | 2018 | [DF91614EBF84](<Digital/HP/HPN354A/DF91614EBF84>) |
@@ -1043,6 +1076,7 @@ model and ID.
 | HP               | HWP2909 | 2310e            | 1920x1080 | 23.1 | 2010 | [1BAC0872E1B7](<Digital/HP/HWP2909/1BAC0872E1B7>) |
 | HP               | HWP2915 |                  | 1920x1080 | 23.1 | 2010 | [382F65F5FE17](<Digital/HP/HWP2915/382F65F5FE17>) |
 | HP               | HWP2949 | LA2306           | 1920x1080 | 23.1 | 2013 | [EC084A297594](<Digital/HP/HWP2949/EC084A297594>) |
+| HP               | HWP294A | LA2306           | 1920x1080 | 23.1 | 2011 | [2A6148FDB0ED](<Digital/HP/HWP294A/2A6148FDB0ED>) |
 | HP               | HWP2957 | ZR2740w          | 2560x1440 | 27.2 | 2012 | [B7D2A9E65078](<Digital/HP/HWP2957/B7D2A9E65078>) |
 | HP               | HWP2963 |                  | 1600x900  | 19.9 |      | [697A68D4EF84](<Digital/HP/HWP2963/697A68D4EF84>) |
 | HP               | HWP298F | L200hx           | 1600x900  | 20.3 | 2013 | [E0C21C580BEE](<Digital/HP/HWP298F/E0C21C580BEE>) |
@@ -1177,6 +1211,7 @@ model and ID.
 | LG Display       | LGD02EC | WX8YV            | 1366x768  | 13.0 | 2011 | [91690FA30E0E](<Digital/LG Display/LGD02EC/91690FA30E0E>) |
 | LG Display       | LGD02F1 |                  | 1366x768  | 15.3 | 2011 | [BAB814833526](<Digital/LG Display/LGD02F1/BAB814833526>) |
 | LG Display       | LGD02F1 | LP156WH4-TLD1    | 1366x768  | 15.3 | 2010 | [7812C41E0275](<Digital/LG Display/LGD02F1/7812C41E0275>) |
+| LG Display       | LGD02F2 |                  | 1366x768  | 15.3 | 2010 | [B862056BA9A8](<Digital/LG Display/LGD02F2/B862056BA9A8>) |
 | LG Display       | LGD02F7 | LP173WD1-TLN1    | 1600x900  | 17.1 | 2010 | [94E832EC1C71](<Digital/LG Display/LGD02F7/94E832EC1C71>) |
 | LG Display       | LGD0303 | CVW69            | 1600x900  | 17.1 |      | [57E5529906D8](<Digital/LG Display/LGD0303/57E5529906D8>) |
 | LG Display       | LGD0314 | LP133WH2-TLM7    | 1366x768  | 13.0 | 2011 | [85EE4ADD5B1C](<Digital/LG Display/LGD0314/85EE4ADD5B1C>) |
@@ -1262,8 +1297,10 @@ model and ID.
 | LG Display       | LGD04B1 | 5T0P9            | 1366x768  | 13.9 | 2015 | [6CBC7F74341A](<Digital/LG Display/LGD04B1/6CBC7F74341A>) |
 | LG Display       | LGD04B6 | LP140WH8-TPH1    | 1366x768  | 13.9 | 2015 | [7200FD0546BC](<Digital/LG Display/LGD04B6/7200FD0546BC>) |
 | LG Display       | LGD04D5 | LP156WF6-SPP1    | 1920x1080 | 15.3 | 2015 | [C81286C1BAAB](<Digital/LG Display/LGD04D5/C81286C1BAAB>) |
+| LG Display       | LGD04DA | KWH3G            | 1920x1080 | 15.3 | 2015 | [2AB30631F1D1](<Digital/LG Display/LGD04DA/2AB30631F1D1>) |
 | LG Display       | LGD04E2 | LP156WHB-TPD1    | 1366x768  | 15.3 | 2015 | [94EE288376DF](<Digital/LG Display/LGD04E2/94EE288376DF>) |
 | LG Display       | LGD04F0 | LP140QH1         | 2560x1440 | 13.9 |      | [89BF556CA7E7](<Digital/LG Display/LGD04F0/89BF556CA7E7>) |
+| LG Display       | LGD04F9 |                  | 1920x1080 | 13.9 | 2015 | [ADF2E4A2AA81](<Digital/LG Display/LGD04F9/ADF2E4A2AA81>) |
 | LG Display       | LGD0508 |                  | 1366x768  | 13.9 | 2016 | [0767CF697256](<Digital/LG Display/LGD0508/0767CF697256>) |
 | LG Display       | LGD0521 | LP140WF6-SPB4    | 1920x1080 | 13.9 | 2016 | [061C379447F1](<Digital/LG Display/LGD0521/061C379447F1>) |
 | LG Display       | LGD0521 | LP140WF6         | 1920x1080 | 13.9 |      | [B3B0D1C89FEC](<Digital/LG Display/LGD0521/B3B0D1C89FEC>) |
@@ -1276,6 +1313,7 @@ model and ID.
 | LG Display       | LGD053F | 4XK13            | 1920x1080 | 15.3 |      | [5EE39F186956](<Digital/LG Display/LGD053F/5EE39F186956>) |
 | LG Display       | LGD0541 | LP156WF9-SPF1    | 1920x1080 | 15.3 | 2016 | [804123A8BBCF](<Digital/LG Display/LGD0541/804123A8BBCF>) |
 | LG Display       | LGD0545 | LP133QD1-SPB3    | 3200x1800 | 13.2 | 2016 | [E1026F9EA60F](<Digital/LG Display/LGD0545/E1026F9EA60F>) |
+| LG Display       | LGD0546 | 218WN            | 1920x1080 | 15.3 | 2016 | [4DF90BB06065](<Digital/LG Display/LGD0546/4DF90BB06065>) |
 | LG Display       | LGD0555 | MP0.1_ LP123W... | 2736x1824 | 12.2 | 2020 | [702980897CBE](<Digital/LG Display/LGD0555/702980897CBE>) |
 | LG Display       | LGD0558 | 0R8RF            | 1920x1080 | 13.9 | 2016 | [DF7C04AEE701](<Digital/LG Display/LGD0558/DF7C04AEE701>) |
 | LG Display       | LGD055F | LP140QH1-SPK1    | 2560x1440 | 13.9 | 2016 | [8657BDF74595](<Digital/LG Display/LGD055F/8657BDF74595>) |
@@ -1330,6 +1368,7 @@ model and ID.
 | Lenovo           | LEN00A0 | M73Z-D           | 1600x900  | 19.7 | 2012 | [B5679AE2D5C8](<Digital/Lenovo/LEN00A0/B5679AE2D5C8>) |
 | Lenovo           | LEN00A1 | E73Z-D           | 1600x900  | 19.7 | 2013 | [ABBC992F21A2](<Digital/Lenovo/LEN00A1/ABBC992F21A2>) |
 | Lenovo           | LEN0990 |                  | 1440x900  | 19.1 | 2010 | [AE280E592BCF](<Digital/Lenovo/LEN0990/AE280E592BCF>) |
+| Lenovo           | LEN1201 | 510I-C           | 1920x1080 | 21.5 | 2016 | [B61BB27F094C](<Digital/Lenovo/LEN1201/B61BB27F094C>) |
 | Lenovo           | LEN2000 |                  | 1920x1080 | 24.0 | 2015 | [2D919E181E59](<Digital/Lenovo/LEN2000/2D919E181E59>) |
 | Lenovo           | LEN2000 |                  | 1920x1080 | 21.7 | 2012 | [4F7B7030441E](<Digital/Lenovo/LEN2000/4F7B7030441E>) |
 | Lenovo           | LEN4000 |                  | 1920x1080 | 23.1 | 2012 | [D6086921162B](<Digital/Lenovo/LEN4000/D6086921162B>) |
@@ -1389,6 +1428,7 @@ model and ID.
 | Lenovo           | LEN61F1 | T32h-20          | 2560x1440 | 31.5 | 2022 | [814545799553](<Digital/Lenovo/LEN61F1/814545799553>) |
 | Lenovo           | LEN61F7 | T24i-20          | 1920x1080 | 24.0 | 2020 | [FA9BF80FC6E9](<Digital/Lenovo/LEN61F7/FA9BF80FC6E9>) |
 | Lenovo           | LEN66A8 | Q24h-10          | 2560x1440 | 24.0 | 2020 | [2A2171BC4D1E](<Digital/Lenovo/LEN66A8/2A2171BC4D1E>) |
+| Lenovo           | LEN66B0 | C24-25           | 1920x1080 | 24.0 | 2021 | [AB6D9ADD3441](<Digital/Lenovo/LEN66B0/AB6D9ADD3441>) |
 | Lenovo           | LEN66B0 | C24-25           | 1920x1080 | 24.0 | 2020 | [A02310DD7408](<Digital/Lenovo/LEN66B0/A02310DD7408>) |
 | Lenovo           | LEN66B8 | D27-30           | 1920x1080 | 27.2 | 2021 | [E3C9EB302A0B](<Digital/Lenovo/LEN66B8/E3C9EB302A0B>) |
 | Lenovo           | LEN66C3 | G27q-20          | 2560x1440 | 27.2 | 2021 | [AF6E4B8DFFDD](<Digital/Lenovo/LEN66C3/AF6E4B8DFFDD>) |
@@ -1404,9 +1444,11 @@ model and ID.
 | Mi               | XMIB004 | 27 NFGL          | 1920x1080 | 27.0 | 2021 | [C7593345475F](<Digital/Mi/XMIB004/C7593345475F>) |
 | Mi               | XMIE001 | Redmi 27 NQ      | 2560x1440 | 27.0 | 2021 | [99AC514E111E](<Digital/Mi/XMIE001/99AC514E111E>) |
 | NEC              | NEC2B1D | EA244UHD         | 3840x2160 | 24.0 | 2016 | [C48A79A10D1C](<Digital/NEC/NEC2B1D/C48A79A10D1C>) |
+| NEC              | NEC2BA7 | EA275WMi         | 2560x1440 | 27.2 | 2016 | [79BC9DC35A84](<Digital/NEC/NEC2BA7/79BC9DC35A84>) |
 | NEC              | NEC2C7A | EX341R           | 3440x1440 | 34.1 | 2020 | [1033150AE00A](<Digital/NEC/NEC2C7A/1033150AE00A>) |
 | NEC              | NEC335C | E438             | 3840x2160 | 42.5 |      | [92E9C6025286](<Digital/NEC/NEC335C/92E9C6025286>) |
 | NEC              | NEC6662 | LCD1970NX        | 1280x1024 | 19.1 |      | [B229A6BD9617](<Digital/NEC/NEC6662/B229A6BD9617>) |
+| NEC              | NEC66C0 | LCD175VXM+       | 1280x1024 | 17.1 | 2007 | [BF20FCDADD4A](<Digital/NEC/NEC66C0/BF20FCDADD4A>) |
 | NEC              | NEC66EA | LCD4020          | 1920x540  | 40.2 | 2007 | [EF7F5ED46F54](<Digital/NEC/NEC66EA/EF7F5ED46F54>) |
 | NEC              | NEC6720 | LCD24WMCX        | 1920x1200 | 24.0 | 2008 | [884C6CF26EF3](<Digital/NEC/NEC6720/884C6CF26EF3>) |
 | NEC              | NEC6866 | EA243WM          | 1920x1200 | 24.0 | 2012 | [34D4A3AE2976](<Digital/NEC/NEC6866/34D4A3AE2976>) |
@@ -1449,6 +1491,7 @@ model and ID.
 | Philips          | PHL0910 | 223S7            | 1920x1080 | 21.7 | 2019 | [00EA2E326539](<Digital/Philips/PHL0910/00EA2E326539>) |
 | Philips          | PHL0929 | 241B8Q           | 1920x1080 | 24.0 | 2020 | [2A5394147BB8](<Digital/Philips/PHL0929/2A5394147BB8>) |
 | Philips          | PHL094B | 275S1            | 2560x1440 | 27.2 | 2020 | [63D2EFFE8E65](<Digital/Philips/PHL094B/63D2EFFE8E65>) |
+| Philips          | PHL0966 | 240B9            | 1920x1200 | 24.0 | 2020 | [A7375AA385B6](<Digital/Philips/PHL0966/A7375AA385B6>) |
 | Philips          | PHL0973 | 439P1            | 3840x2160 | 42.5 | 2021 | [C21388D6B012](<Digital/Philips/PHL0973/C21388D6B012>) |
 | Philips          | PHLC01A |                  | 1680x1050 | 22.0 | 2007 | [984D47C27DF8](<Digital/Philips/PHLC01A/984D47C27DF8>) |
 | Philips          | PHLC050 |                  | 1366x768  | 18.5 | 2011 | [9766C1F79A39](<Digital/Philips/PHLC050/9766C1F79A39>) |
@@ -1476,10 +1519,12 @@ model and ID.
 | Philips          | PHLC204 | PHL 328E1        | 3840x2160 | 31.5 | 2020 | [2C687361B796](<Digital/Philips/PHLC204/2C687361B796>) |
 | Philips          | PHLC211 | PHL 221V8        | 1920x1080 | 21.7 | 2021 | [778C4CF7B9EF](<Digital/Philips/PHLC211/778C4CF7B9EF>) |
 | Philips          | PHLC211 | PHL 221V8        | 1920x1080 | 21.7 | 2011 | [BCA3CA5ED930](<Digital/Philips/PHLC211/BCA3CA5ED930>) |
+| Philips          | PHLC212 | PHL 241V8        | 1920x1080 | 24.0 | 2021 | [3FAADBD6FD19](<Digital/Philips/PHLC212/3FAADBD6FD19>) |
 | Philips          | PHLC217 | PHL 278E1        | 3840x2160 | 27.2 | 2020 | [7634E23863DC](<Digital/Philips/PHLC217/7634E23863DC>) |
 | Philips          | PHLD05D | 22PFL3404D       | 1920x1080 | 28.9 | 2009 | [A5AD22193E8E](<Digital/Philips/PHLD05D/A5AD22193E8E>) |
 | Pixio            | HYC2700 | PX7 Prime        | 2560x1440 | 27.2 | 2019 | [D07FC67222B8](<Digital/Pixio/HYC2700/D07FC67222B8>) |
 | Pixio            | PNS0247 | PX247            | 1920x1080 | 23.8 | 2020 | [C492C72E8955](<Digital/Pixio/PNS0247/C492C72E8955>) |
+| Quanta Display   | QDS0020 | QUANTADISPLAY    | 1280x768  | 14.1 |      | [D5296B9A3779](<Digital/Quanta Display/QDS0020/D5296B9A3779>) |
 | RS               | BTC2262 | LE2262           | 1680x1050 | 21.7 | 2007 | [642733CC781C](<Digital/RS/BTC2262/642733CC781C>) |
 | Samsung          | SAM011E | SyncMaster       | 1280x1024 | 17.1 |      | [CC7D0DC1829C](<Digital/Samsung/SAM011E/CC7D0DC1829C>) |
 | Samsung          | SAM011F | SyncMaster       | 1280x1024 | 19.1 |      | [16A626CF3993](<Digital/Samsung/SAM011F/16A626CF3993>) |
@@ -1592,6 +1637,7 @@ model and ID.
 | Samsung          | SAM0DF7 |                  | 3840x2160 | 54.6 |      | [75444612D129](<Digital/Samsung/SAM0DF7/75444612D129>) |
 | Samsung          | SAM0E0C | S24H85x          | 2560x1440 | 24.0 | 2019 | [84D2445EC80C](<Digital/Samsung/SAM0E0C/84D2445EC80C>) |
 | Samsung          | SAM0E0C | S24H85x          | 2560x1440 | 24.0 | 2016 | [DCE774F53C22](<Digital/Samsung/SAM0E0C/DCE774F53C22>) |
+| Samsung          | SAM0E0F | S27H85x          | 2560x1440 | 27.2 | 2020 | [29F9CB5FDF5C](<Digital/Samsung/SAM0E0F/29F9CB5FDF5C>) |
 | Samsung          | SAM0E25 | C34H89x          | 3440x1440 | 34.1 |      | [FF302DB708E3](<Digital/Samsung/SAM0E25/FF302DB708E3>) |
 | Samsung          | SAM0E3C | U32H85x          | 3840x2160 | 31.5 | 2017 | [ECF82D1913B1](<Digital/Samsung/SAM0E3C/ECF82D1913B1>) |
 | Samsung          | SAM0E41 | C27FG7x          | 1920x1080 | 27.2 | 2019 | [8E35C37DDFE8](<Digital/Samsung/SAM0E41/8E35C37DDFE8>) |
@@ -1632,6 +1678,7 @@ model and ID.
 | Samsung          | SDC4142 |                  | 3840x2160 | 13.2 | 2019 | [4513FD766995](<Digital/Samsung/SDC4142/4513FD766995>) |
 | Samsung          | SDC4158 | ATNA33XC11-0     | 1920x1080 | 13.2 | 2020 | [04342370263E](<Digital/Samsung/SDC4158/04342370263E>) |
 | Samsung          | SDC415A |                  | 3200x1800 | 13.0 |      | [2FE266A364BE](<Digital/Samsung/SDC415A/2FE266A364BE>) |
+| Samsung          | SDC4244 |                  | 2160x1440 | 11.9 | 2015 | [4E813DB6A866](<Digital/Samsung/SDC4244/4E813DB6A866>) |
 | Samsung          | SDC424A | LTN133YL01L01    | 3200x1800 | 13.2 | 2013 | [E9C44A35CD7E](<Digital/Samsung/SDC424A/E9C44A35CD7E>) |
 | Samsung          | SDC4253 |                  | 1366x768  | 11.8 | 2015 | [E2E49996A17C](<Digital/Samsung/SDC4253/E2E49996A17C>) |
 | Samsung          | SDC4347 | 156AT32-T01      | 1366x768  | 15.3 | 2012 | [7B7BA0A6D42D](<Digital/Samsung/SDC4347/7B7BA0A6D42D>) |
@@ -1640,6 +1687,7 @@ model and ID.
 | Samsung          | SDC4752 | LTN156AT32L01    | 1366x768  | 15.3 | 2012 | [FD9913FA7D5D](<Digital/Samsung/SDC4752/FD9913FA7D5D>) |
 | Samsung          | SDC4852 | LTN156HL09901    | 1920x1080 | 15.3 | 2015 | [F6E1E3674FE6](<Digital/Samsung/SDC4852/F6E1E3674FE6>) |
 | Samsung          | SDC4852 | LTN156AT37L01    | 1366x768  | 15.3 | 2014 | [284893B8FEC1](<Digital/Samsung/SDC4852/284893B8FEC1>) |
+| Samsung          | SDC4C46 | 2038W            | 3840x2160 | 15.3 | 2015 | [CCC69725D596](<Digital/Samsung/SDC4C46/CCC69725D596>) |
 | Samsung          | SDC4C48 | FYTXT            | 1920x1080 | 15.3 | 2014 | [A0E66CFD73EE](<Digital/Samsung/SDC4C48/A0E66CFD73EE>) |
 | Samsung          | SDC4C48 | 6FR8F            | 1920x1080 | 10.7 | 2014 | [A274991570D1](<Digital/Samsung/SDC4C48/A274991570D1>) |
 | Samsung          | SDC4C51 |                  | 1366x768  | 15.3 | 2014 | [9813B441B9EF](<Digital/Samsung/SDC4C51/9813B441B9EF>) |
@@ -1673,7 +1721,7 @@ model and ID.
 | Samsung          | SEC3849 | LTN140AT22P01    | 1366x768  | 13.9 | 2011 | [CD73B285B8A9](<Digital/Samsung/SEC3849/CD73B285B8A9>) |
 | Samsung          | SEC384A | LTN156AT248      | 1366x768  | 15.3 | 2011 | [6177DB56187E](<Digital/Samsung/SEC384A/6177DB56187E>) |
 | Samsung          | SEC3942 |                  | 1366x768  | 13.9 | 2008 | [1577687192EC](<Digital/Samsung/SEC3942/1577687192EC>) |
-| Samsung          | SEC4149 |                  | 1366x768  | 12.9 | 2011 | [47A13EE7492D](<Digital/Samsung/SEC4149/47A13EE7492D>) |
+| Samsung          | SEC4149 |                  | 1366x768  | 12.9 | 2011 | [26661DB2568E](<Digital/Samsung/SEC4149/26661DB2568E>) |
 | Samsung          | SEC414C | 140AT20-L02      | 1366x768  | 13.9 | 2010 | [8FF07F778BAD](<Digital/Samsung/SEC414C/8FF07F778BAD>) |
 | Samsung          | SEC4251 | 156AT05-H07      | 1366x768  | 15.3 | 2008 | [90253AA17DEE](<Digital/Samsung/SEC4251/90253AA17DEE>) |
 | Samsung          | SEC4351 | 156AT05-307      | 1366x768  | 15.3 | 2008 | [7CE1F6FAFA38](<Digital/Samsung/SEC4351/7CE1F6FAFA38>) |
@@ -1689,6 +1737,7 @@ model and ID.
 | Samsung          | SEC5441 | P323X            | 1280x800  | 15.4 | 2008 | [56E53616F48C](<Digital/Samsung/SEC5441/56E53616F48C>) |
 | Samsung          | SEC5441 | R801J            | 1366x768  | 15.3 | 2008 | [5B00D3CF857B](<Digital/Samsung/SEC5441/5B00D3CF857B>) |
 | Samsung          | SEC5442 | C51DW            | 1440x900  | 14.0 | 2010 | [5FB54D198564](<Digital/Samsung/SEC5442/5FB54D198564>) |
+| Samsung          | SEC5442 | TT219            | 1440x900  | 14.0 | 2008 | [FAA317922880](<Digital/Samsung/SEC5442/FAA317922880>) |
 | Samsung          | SEC5448 | HGT3J            | 1920x1080 | 18.5 | 2010 | [6794D63A1B06](<Digital/Samsung/SEC5448/6794D63A1B06>) |
 | Samsung          | SEC544B | HND16            | 1600x900  | 13.9 | 2011 | [6BFF0C4D75B7](<Digital/Samsung/SEC544B/6BFF0C4D75B7>) |
 | Samsung          | SEC544B | MJ154            | 1600x900  | 13.9 | 2010 | [89C3A76A0DFB](<Digital/Samsung/SEC544B/89C3A76A0DFB>) |
@@ -1714,6 +1763,7 @@ model and ID.
 | Sharp            | SHP143E | 7PHPT            | 3840x2160 | 15.7 | 2015 | [2CFCD3407657](<Digital/Sharp/SHP143E/2CFCD3407657>) |
 | Sharp            | SHP1445 |                  | 3840x2160 | 15.7 | 2015 | [F6C5B1086010](<Digital/Sharp/SHP1445/F6C5B1086010>) |
 | Sharp            | SHP1449 | DJCP6            | 1920x1080 | 13.2 | 2015 | [5B210DD2B02F](<Digital/Sharp/SHP1449/5B210DD2B02F>) |
+| Sharp            | SHP144D | LQ125D1JW33      | 3840x2160 | 12.7 | 2015 | [3614B073FC3F](<Digital/Sharp/SHP144D/3614B073FC3F>) |
 | Sharp            | SHP1451 | LQ125M1JW33      | 1920x1080 | 12.7 | 2015 | [7BF8DB4BA856](<Digital/Sharp/SHP1451/7BF8DB4BA856>) |
 | Sharp            | SHP1453 | 1203M            | 1920x1080 | 15.7 | 2015 | [17D7D0D1A823](<Digital/Sharp/SHP1453/17D7D0D1A823>) |
 | Sharp            | SHP1461 | 57YP4            | 3200x1800 | 13.2 | 2016 | [AA0142BBCE30](<Digital/Sharp/SHP1461/AA0142BBCE30>) |
@@ -1722,13 +1772,16 @@ model and ID.
 | Sharp            | SHP148D | FNVDR            | 3840x2160 | 15.3 | 2018 | [FDA1D836C2F4](<Digital/Sharp/SHP148D/FDA1D836C2F4>) |
 | Sharp            | SHP148E | 4XX10            | 1920x1080 | 15.3 | 2017 | [CF90B5359A67](<Digital/Sharp/SHP148E/CF90B5359A67>) |
 | Sharp            | SHP14A6 | LQ100P1JX51      | 1800x1200 | 9.9  | 2017 | [D212727BEB73](<Digital/Sharp/SHP14A6/D212727BEB73>) |
+| Sharp            | SHP14B9 | N5V8C            | 3840x2160 | 15.3 | 2019 | [4E80A9A89366](<Digital/Sharp/SHP14B9/4E80A9A89366>) |
 | Sharp            | SHP14BA | MWP1T            | 1920x1080 | 15.3 | 2019 | [4CB73C733D4B](<Digital/Sharp/SHP14BA/4CB73C733D4B>) |
 | Sharp            | SHP14C3 | LQ156M1JW01      | 1920x1080 | 15.3 | 2019 | [6BB7BE113A07](<Digital/Sharp/SHP14C3/6BB7BE113A07>) |
 | Sharp            | SHP14CB | XGFJ0            | 1920x1200 | 13.4 | 2019 | [8774A86F4321](<Digital/Sharp/SHP14CB/8774A86F4321>) |
 | Sharp            | SHP14D1 | FKR1K            | 1920x1200 | 15.7 | 2020 | [4D6D158D7FA0](<Digital/Sharp/SHP14D1/4D6D158D7FA0>) |
 | Sharp            | SHP14EC | LQ173M1JW05      | 1920x1080 | 17.1 | 2019 | [7B953106ED0D](<Digital/Sharp/SHP14EC/7B953106ED0D>) |
+| Sharp            | SHP14F9 | VVK8Y            | 1920x1200 | 13.4 | 2020 | [B247C885CEB5](<Digital/Sharp/SHP14F9/B247C885CEB5>) |
 | Sharp            | SHP1521 | LQ134N1JW53      | 1920x1200 | 13.4 | 2020 | [043A7B7880BF](<Digital/Sharp/SHP1521/043A7B7880BF>) |
 | Sharp            | SHP1542 | XWXRY            | 1920x1080 | 13.9 | 2021 | [1EB38F55029C](<Digital/Sharp/SHP1542/1EB38F55029C>) |
+| Sony             | SNY05D1 | TV  *30          | 3840x2160 | 74.9 | 2020 | [54C898B9D33C](<Digital/Sony/SNY05D1/54C898B9D33C>) |
 | Sony             | SNY06FA | LCD              | 1600x900  | 13.0 | 2012 | [0D376806F616](<Digital/Sony/SNY06FA/0D376806F616>) |
 | Sony             | SNY2300 | SDM              | 1280x1024 | 17.1 |      | [FC5DEDC079FC](<Digital/Sony/SNY2300/FC5DEDC079FC>) |
 | Sony             | SNY3800 | SDM-S75D/F/N     | 1280x1024 | 17.1 |      | [90B44241DBE9](<Digital/Sony/SNY3800/90B44241DBE9>) |
@@ -1737,6 +1790,7 @@ model and ID.
 | Sony             | SNY7C04 |                  | 3840x2160 | 48.8 |      | [358A98047B00](<Digital/Sony/SNY7C04/358A98047B00>) |
 | Sony             | SNY8204 |                  | 4096x2160 | 55.0 |      | [3D7B20525FB4](<Digital/Sony/SNY8204/3D7B20525FB4>) |
 | Sony             | SNY9C01 | TV               | 1360x768  |      | 2009 | [4795E9BC5CCD](<Digital/Sony/SNY9C01/4795E9BC5CCD>) |
+| Sony             | SNYA401 | TV               | 1920x1080 |      | 2009 | [C9F5D0F7CE42](<Digital/Sony/SNYA401/C9F5D0F7CE42>) |
 | Sony             | SNYC901 | TV               | 1920x1080 |      | 2009 | [338AC7A4C56C](<Digital/Sony/SNYC901/338AC7A4C56C>) |
 | Sony             | SNYE903 | TV               | 1920x1080 |      | 2016 | [8B6CB46097D7](<Digital/Sony/SNYE903/8B6CB46097D7>) |
 | Sony             | SNYEE01 | TV               | 1920x1080 |      | 2010 | [2EEE288ECB2F](<Digital/Sony/SNYEE01/2EEE288ECB2F>) |
@@ -1774,6 +1828,7 @@ model and ID.
 | ViewSonic        | VSC8C34 | VP3268-4K        | 3840x2160 | 31.5 | 2020 | [CA3FFF4CF8E4](<Digital/ViewSonic/VSC8C34/CA3FFF4CF8E4>) |
 | ViewSonic        | VSC9239 | VA2223-FHD       | 1920x1080 | 21.7 | 2019 | [ACF033CBE7A5](<Digital/ViewSonic/VSC9239/ACF033CBE7A5>) |
 | ViewSonic        | VSC9636 | VP2768-4k        | 3840x2160 | 27.2 | 2020 | [44DF52C105ED](<Digital/ViewSonic/VSC9636/44DF52C105ED>) |
+| ViewSonic        | VSCA736 | VA2710-FHD       | 1920x1080 | 27.2 | 2018 | [8DB9748A790F](<Digital/ViewSonic/VSCA736/8DB9748A790F>) |
 | ViewSonic        | VSCBD2B |                  | 1920x1080 | 21.7 | 2012 | [6397B66C1CC4](<Digital/ViewSonic/VSCBD2B/6397B66C1CC4>) |
 | ViewSonic        | VSCC42B |                  | 1920x1080 | 21.7 | 2013 | [F7EBF92C02B5](<Digital/ViewSonic/VSCC42B/F7EBF92C02B5>) |
 | ViewSonic        | VSCD22B |                  | 1920x1080 | 23.4 | 2020 | [C7EC301B3685](<Digital/ViewSonic/VSCD22B/C7EC301B3685>) |
