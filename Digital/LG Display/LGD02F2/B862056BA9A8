@@ -1,0 +1,51 @@
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 30 e4 f2 02 00 00 00 00
+00 14 01 03 80 22 13 78 0a 05 85 9b 5b 54 94 26
+0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 12 1b 56 72 50 00 0c 30 24 28
+35 00 58 c2 10 00 00 19 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c
+47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe
+00 4c 50 31 35 36 57 48 34 2d 54 4c 43 31 00 ff
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: LGD
+    Model: 754
+    Made in: 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6054, 0.3554
+    Green: 0.3291, 0.5791
+    Blue : 0.1503, 0.0546
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1366x768    60.031185 Hz 683:384   46.824 kHz     69.300000 MHz (344 mm x 194 mm)
+                 Hfront   36 Hsync  40 Hback   38 Hpol N
+                 Vfront    3 Vsync   5 Vback    4 Vpol N
+    Empty Descriptor
+    Alphanumeric Data String: 'LG Display'
+    Alphanumeric Data String: 'LP156WH4-TLC1'
+Checksum: 0xff
+
+----------------
+
+Failures:
+
+Block 0, Base EDID:
+  Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
+  Missing Display Product Name.
+  Missing Display Range Limits Descriptor.
+
+EDID conformity: FAIL
