@@ -1,0 +1,70 @@
+
+EDID (hex):
+00ffffffffffff00429313036c280400
+2b0c01010820181be85c119e59479b27
+10484fa14b003159455945686159a940
+010100000000d20f80a020e01a101040
+130036e610000018f91520f830581f20
+204013000ec81000001e000000fd0032
+a01e560f000a202020202020000000fe
+004641594a3241303237323439320036
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 42 93 13 03 6c 28 04 00
+2b 0c 01 01 08 20 18 1b e8 5c 11 9e 59 47 9b 27
+10 48 4f a1 4b 00 31 59 45 59 45 68 61 59 a9 40
+01 01 00 00 00 00 d2 0f 80 a0 20 e0 1a 10 10 40
+13 00 36 e6 10 00 00 18 f9 15 20 f8 30 58 1f 20
+20 40 13 00 0e c8 10 00 00 1e 00 00 00 fd 00 32
+a0 1e 56 0f 00 0a 20 20 20 20 20 20 00 00 00 fe
+00 46 41 59 4a 32 41 30 32 37 32 34 39 32 00 36
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.1
+  Vendor & Product Identification:
+    Manufacturer: PTS
+    Model: 787
+    Serial Number: 272492
+    Made in: week 43 of 2002
+  Basic Display Parameters & Features:
+    Analog display
+    Signal Level Standard: 0.700 : 0.300 : 1.000 V p-p
+    Blank level equals black level
+    Sync: Separate
+    Maximum image size: 32 cm x 24 cm
+    Gamma: 1.27
+    DPMS levels: Standby Suspend Off
+    RGB color display
+  Color Characteristics:
+    Red  : 0.6181, 0.3486
+    Green: 0.2802, 0.6054
+    Blue : 0.1523, 0.0634
+    White: 0.2812, 0.3095
+  Established Timings I & II:
+    IBM     :   720x400    70.081663 Hz   9:5     31.467 kHz     28.320000 MHz
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
+    DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
+  Standard Timings:
+    DMT 0x07:   640x480    85.008312 Hz   4:3     43.269 kHz     36.000000 MHz
+    DMT 0x0c:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz
+    Unknown :   800x600   100.000 Hz   4:3
+    DMT 0x13:  1024x768    84.996690 Hz   4:3     68.677 kHz     94.500000 MHz
+    DMT 0x33:  1600x1200   60.000000 Hz   4:3     75.000 kHz    162.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:   640x480   100.049407 Hz   4:3     50.625 kHz     40.500000 MHz (310 mm x 230 mm)
+                 Hfront   16 Hsync  64 Hback   80 Hpol N
+                 Vfront    1 Vsync   3 Vback   22 Vpol N
+    DTD 2:   800x600    85.061274 Hz   4:3     53.674 kHz     56.250000 MHz (270 mm x 200 mm)
+                 Hfront   32 Hsync  64 Hback  152 Hpol P
+                 Vfront    1 Vsync   3 Vback   27 Vpol P
+    Display Range Limits:
+      Monitor ranges (GTF): 50-160 Hz V, 30-86 kHz H, max dotclock 150 MHz
+    Alphanumeric Data String: 'FAYJ2A0272492'
+Checksum: 0x36

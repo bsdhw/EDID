@@ -1,0 +1,53 @@
+
+EDID (hex):
+00ffffffffffff004ca3415400000000
+00120103902115780a87f594574f8c27
+27505400000001010101010101010101
+010101010101471d00da502022301030
+13004bcf1000001a471d00da50202230
+103013004bcf1000001a000000fe004d
+543130328031353441540a2000000000
+00000000000000000001010a2020005b
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 4c a3 41 54 00 00 00 00
+00 12 01 03 90 21 15 78 0a 87 f5 94 57 4f 8c 27
+27 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 47 1d 00 da 50 20 22 30 10 30
+13 00 4b cf 10 00 00 1a 47 1d 00 da 50 20 22 30
+10 30 13 00 4b cf 10 00 00 1a 00 00 00 fe 00 4d
+54 31 30 32 80 31 35 34 41 54 0a 20 00 00 00 00
+00 00 00 00 00 00 00 00 00 01 01 0a 20 20 00 5b
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: SEC
+    Model: 21569
+    Made in: 2008
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 33 cm x 21 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.5800, 0.3398
+    Green: 0.3095, 0.5498
+    Blue : 0.1552, 0.1552
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1280x800    59.992060 Hz  16:10    50.033 kHz     74.950000 MHz (331 mm x 207 mm)
+                 Hfront   16 Hsync  48 Hback  154 Hpol P
+                 Vfront    1 Vsync   3 Vback   30 Vpol N
+    DTD 2:  1280x800    59.992060 Hz  16:10    50.033 kHz     74.950000 MHz (331 mm x 207 mm)
+                 Hfront   16 Hsync  48 Hback  154 Hpol P
+                 Vfront    1 Vsync   3 Vback   30 Vpol N
+    Alphanumeric Data String: 'MT102'
+    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
+Checksum: 0x5b

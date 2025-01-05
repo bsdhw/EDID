@@ -1,0 +1,55 @@
+
+EDID (hex):
+00ffffffffffff0006af9f3600000000
+001f0104a522137803ffe59257599129
+21505400000001010101010101010101
+010101010101963780c8703826406c30
+aa0058c2100000180000000f00000000
+00000000000000000020000000fd0028
+3c44440e010a202020202020000000fe
+004231353648544e30362e32200a00fc
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af 9f 36 00 00 00 00
+00 1f 01 04 a5 22 13 78 03 ff e5 92 57 59 91 29
+21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 96 37 80 c8 70 38 26 40 6c 30
+aa 00 58 c2 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 28
+3c 44 44 0e 01 0a 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 36 48 54 4e 30 36 2e 32 20 0a 00 fc
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 13983
+    Made in: 2021
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 8
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+    Display is continuous frequency
+  Color Characteristics:
+    Red  : 0.5732, 0.3427
+    Green: 0.3505, 0.5693
+    Blue : 0.1630, 0.1308
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.038141 Hz  16:9     67.123 kHz    142.300000 MHz (344 mm x 194 mm)
+                 Hfront  108 Hsync  48 Hback   44 Hpol N
+                 Vfront   10 Vsync  10 Vback   18 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Display Range Limits:
+      Monitor ranges (Bare Limits): 40-60 Hz V, 68-68 kHz H, max dotclock 140 MHz
+    Alphanumeric Data String: 'B156HTN06.2 '
+Checksum: 0xfc

@@ -1,0 +1,65 @@
+
+EDID (hex):
+00ffffffffffff002de1300001000000
+0a140103807341780acf74a3574cb023
+09484c2108008bc081c06140ff018180
+010101010101023a801871382d40582c
+4500c48e2100001e011d8018711c1620
+582c2500c48e2100009e000000fc0054
+565f4d4f4e49544f520a2020000000fd
+003b3c1f2d08000a2020202020200118
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 2d e1 30 00 01 00 00 00
+0a 14 01 03 80 73 41 78 0a cf 74 a3 57 4c b0 23
+09 48 4c 21 08 00 8b c0 81 c0 61 40 ff 01 81 80
+01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+45 00 c4 8e 21 00 00 1e 01 1d 80 18 71 1c 16 20
+58 2c 25 00 c4 8e 21 00 00 9e 00 00 00 fc 00 54
+56 5f 4d 4f 4e 49 54 4f 52 0a 20 20 00 00 00 fd
+00 3b 3c 1f 2d 08 00 0a 20 20 20 20 20 20 01 18
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.3
+  Vendor & Product Identification:
+    Manufacturer: KOA
+    Model: 48
+    Serial Number: 1
+    Made in: week 10 of 2010
+  Basic Display Parameters & Features:
+    Digital display
+    Maximum image size: 115 cm x 65 cm
+    Gamma: 2.20
+    RGB color display
+    First detailed timing is the preferred timing
+  Color Characteristics:
+    Red  : 0.6396, 0.3398
+    Green: 0.2998, 0.6904
+    Blue : 0.1376, 0.0380
+    White: 0.2822, 0.2968
+  Established Timings I & II:
+    DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
+    DMT 0x09:   800x600    60.316541 Hz   4:3     37.879 kHz     40.000000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+  Standard Timings:
+    GTF     :  1360x765    60.000341 Hz  16:9     47.520 kHz     84.396000 MHz
+    DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
+    DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
+    GTF     :  2288x1430   61.000017 Hz  16:10    90.341 kHz    281.864000 MHz
+    DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    Display Product Name: 'TV_MONITOR'
+    Display Range Limits:
+      Monitor ranges (GTF): 59-60 Hz V, 31-45 kHz H, max dotclock 80 MHz
+  Extension blocks: 1
+Checksum: 0x18

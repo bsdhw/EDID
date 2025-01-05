@@ -1,0 +1,53 @@
+
+EDID (hex):
+00ffffffffffff0006afed3100000000
+001601049522137802d1159e59539b27
+1e505400000001010101010101010101
+010101010101a43880be70383c403064
+310058c1100000180000000f00000000
+00000000000000000020000000fe0041
+554f0a202020202020202020000000fe
+004231353648544e30332e31200a00de
+
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 06 af ed 31 00 00 00 00
+00 16 01 04 95 22 13 78 02 d1 15 9e 59 53 9b 27
+1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 a4 38 80 be 70 38 3c 40 30 64
+31 00 58 c1 10 00 00 18 00 00 00 0f 00 00 00 00
+00 00 00 00 00 00 00 00 00 20 00 00 00 fe 00 41
+55 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 42 31 35 36 48 54 4e 30 33 2e 31 20 0a 00 de
+
+----------------
+
+Block 0, Base EDID:
+  EDID Structure Version & Revision: 1.4
+  Vendor & Product Identification:
+    Manufacturer: AUO
+    Model: 12781
+    Made in: 2012
+  Basic Display Parameters & Features:
+    Digital display
+    Bits per primary color channel: 6
+    DisplayPort interface
+    Maximum image size: 34 cm x 19 cm
+    Gamma: 2.20
+    Supported color formats: RGB 4:4:4
+    First detailed timing includes the native pixel format and preferred refresh rate
+  Color Characteristics:
+    Red  : 0.6201, 0.3486
+    Green: 0.3242, 0.6064
+    Blue : 0.1523, 0.1181
+    White: 0.3134, 0.3291
+  Established Timings I & II: none
+  Standard Timings: none
+  Detailed Timing Descriptors:
+    DTD 1:  1920x1080   60.281034 Hz  16:9     68.720 kHz    145.000000 MHz (344 mm x 193 mm)
+                 Hfront   48 Hsync 100 Hback   42 Hpol N
+                 Vfront    3 Vsync   1 Vback   56 Vpol N
+    Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
+    Alphanumeric Data String: 'AUO'
+    Alphanumeric Data String: 'B156HTN03.1 '
+Checksum: 0xde
